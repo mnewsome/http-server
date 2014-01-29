@@ -6,14 +6,14 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 import java.util.StringTokenizer;
 
-public class Data {
+public class RequestData {
     private final  Socket clientSocket;
     BufferedReader input;
+    StringTokenizer token;
 
-    public Data (Socket clientSocket) {
+    public RequestData(Socket clientSocket) {
         this.clientSocket = clientSocket;
     }
-
 
     public String getRequest() throws IOException {
         input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
@@ -21,9 +21,16 @@ public class Data {
         return request;
     }
 
-    public String getRequestMethod() throws IOException{
-        StringTokenizer token = new StringTokenizer(this.getRequest());
+    public String getRequestMethod() throws IOException {
+        token = new StringTokenizer(this.getRequest());
         String requestMethod = token.nextToken();
         return requestMethod;
+    }
+
+    public String getRequestFile() throws IOException {
+        token = new StringTokenizer(this.getRequest());
+        token.nextToken();
+        String fileName = token.nextToken();
+        return fileName;
     }
 }
