@@ -48,4 +48,10 @@ public class FileParserTest {
         FileParser fp = new FileParser("image.png");
         assertEquals("PNG Content type", "image/png", fp.getContentType());
     }
+
+    @Test
+    public void  testGetContentLength() {
+        FileParser fp = new FileParser("index.html");
+        assertEquals("Content Length", "0", fp.getContentLength());
+    }
 }

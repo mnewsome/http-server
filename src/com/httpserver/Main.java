@@ -1,9 +1,23 @@
 package com.httpserver;
 
+import java.io.IOException;
+
 public class Main {
 
-    public static void main(String[] args) {
-	    Server server = new Server(5000);
-        server.run();
+    public static void main(String[] args){
+        int portNumber;
+
+        try {
+            portNumber = Integer.parseInt(args[0]);
+        } catch (Exception e) {
+            portNumber = 5000;
+        }
+
+        HttpServer httpServer = new HttpServer(portNumber);
+        try {
+            httpServer.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

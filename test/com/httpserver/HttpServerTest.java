@@ -6,16 +6,16 @@ import org.junit.rules.ExpectedException;
 
 import java.io.IOException;
 
-public class ServerTest {
+public class HttpServerTest {
     @Rule
     public ExpectedException thrown = ExpectedException.none();
 
     @Test
     public void testStartSeverIOError() throws Exception {
-        System.out.println("Starting server");
+        System.out.println("Starting httpServer");
 
-        Server server = new Server(5000);
-        server.run();
+        HttpServer httpServer = new HttpServer(5000);
+        httpServer.start();
         thrown.expect(IOException.class);
     }
 

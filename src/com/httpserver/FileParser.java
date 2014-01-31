@@ -28,15 +28,20 @@ public class FileParser {
 
         if (requestFile.endsWith(".html") || requestFile.endsWith(".htm"))
             contentType = "text/html";
-        else if (requestFile.endsWith(".txt"))
-            contentType = "text/plain";
         else if (requestFile.endsWith(".jpg") || requestFile.endsWith(".jpeg"))
             contentType = "image/jpeg";
         else if (requestFile.endsWith(".gif"))
             contentType = "image/gif";
         else if (requestFile.endsWith(".png"))
             contentType = "image/png";
+        else
+            contentType = "text/plain";
 
         return contentType;
+    }
+
+
+    public String getContentLength() {
+        return "";
     }
 }

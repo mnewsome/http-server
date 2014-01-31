@@ -2,22 +2,21 @@ package com.httpserver;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.Socket;
 import java.util.StringTokenizer;
 
-public class RequestData {
-    private final  Socket clientSocket;
-    BufferedReader input;
+public class RequestDirector {
+    private final  BufferedReader clientInput;
     StringTokenizer token;
 
-    public RequestData(Socket clientSocket) {
-        this.clientSocket = clientSocket;
+    public RequestDirector(BufferedReader clientInput) {
+        this.clientInput = clientInput;
     }
 
     public String getRequest() throws IOException {
-        input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-        String request = input.readLine();
+        String request = clientInput.readLine();
+//        while (!(request = input.readLine()).equals("")) {
+//            System.out.println(request);
+//        }
         return request;
     }
 
@@ -27,8 +26,8 @@ public class RequestData {
         return requestMethod;
     }
 
-    public String getRequestFile() throws IOException {
-        token = new StringTokenizer(this.getRequest());
+    public String getRequestFile(String requestLine) throws IOException {
+        token = new StringTokenizer(requestLine);
         token.nextToken();
         String fileName = token.nextToken();
         return fileName;
