@@ -24,17 +24,19 @@ public class ServerThread extends Thread{
             input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             RequestDirector requestDirector = new RequestDirector(input);
             String requestLine = requestDirector.getRequest();
-            System.out.println(requestLine);
+//            System.out.println(requestLine);
             ResponseGenerator responseGenerator = new ResponseGenerator(requestDirector.getRequestFile(requestLine));
             output = new DataOutputStream(clientSocket.getOutputStream());
-            System.out.println(responseGenerator.rootResponse());
+            String statusCode = (String) responseGenerator.rootResponse().keySet().toArray()[0];
+//            System.out.println(statusCode);
 
-            output.writeBytes("HTTP/1.1 200 OK\r\n");
             Date currentDateTime = new Date();
-            output.writeBytes("Date: " + currentDateTime + "\r\n");
-            output.writeBytes("Server: Newsome-HTTP-Server\r\n");
-            output.writeBytes("Content-type: text/plain\r\n");
-            output.writeBytes("Content-length: 60\r\n\r\n");
+
+//            output.writeBytes(String.format("HTTP/1.1 %s OK\r\n" +
+//                    "Date: %s\r\n" +
+//                    "Server: Newsome-HTTP-Server\r\n" +
+//                    "Content-type: text/plain\r\n" +
+//                    "Content-length: 60\r\n\r\n", statusCode , currentDateTime));
 //            output.writeBytes(responseGenerator.rootResponse());
 
         } catch (IOException e) {

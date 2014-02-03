@@ -15,7 +15,6 @@ public class RequestDirectorTest {
 
     @Test
     public void testGetRequest() throws IOException {
-        String localhost = "192.168.1.65";
         ServerSocket ss = new ServerSocket(5000);
         Socket testSocket = ss.accept();
         BufferedReader input = new BufferedReader(new InputStreamReader(testSocket.getInputStream()));
@@ -26,12 +25,13 @@ public class RequestDirectorTest {
 
     @Test
     public void testGetRequestMethod() throws IOException {
+        String requestLine = "GET /index.html HTTP/1.1";
         ServerSocket ss = new ServerSocket(5000);
         Socket testSocket = ss.accept();
         BufferedReader input = new BufferedReader(new InputStreamReader(testSocket.getInputStream()));
         RequestDirector requestDirector = new RequestDirector(input);
         ss.close();
-        assertEquals("Request method", "GET", requestDirector.getRequestMethod());
+        assertEquals("Request method", "GET", requestDirector.getRequestMethod(requestLine));
     }
 
     @Test

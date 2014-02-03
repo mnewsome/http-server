@@ -13,23 +13,28 @@ public class RequestDirector {
     }
 
     public String getRequest() throws IOException {
-        String request = clientInput.readLine();
-//        while (!(request = input.readLine()).equals("")) {
-//            System.out.println(request);
-//        }
-        return request;
+        StringBuilder request = new StringBuilder();
+        while (clientInput.ready()) {
+            request.append((char) clientInput.read());
+        }
+        return request.toString();
     }
 
-    public String getRequestMethod() throws IOException {
-        token = new StringTokenizer(this.getRequest());
-        String requestMethod = token.nextToken();
+    public String getRequestMethod(String request) {
+        String[] headerLineParts = getHeaderLineParts(request);
+        String requestMethod = headerLineParts[0];
         return requestMethod;
     }
 
-    public String getRequestFile(String requestLine) throws IOException {
-        token = new StringTokenizer(requestLine);
-        token.nextToken();
-        String fileName = token.nextToken();
+    public String getRequestFile(String request) {
+        String[] headerLineParts = getHeaderLineParts(request);
+        String fileName = headerLineParts[1];
         return fileName;
+    }
+
+    private String[] getHeaderLineParts(String request) {
+        String[] headerLine = request.split("\r\n");
+        String[] headerLineParts = headerLine[0].split(" ");
+        return headerLineParts;
     }
 }
