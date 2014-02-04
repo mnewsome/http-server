@@ -40,8 +40,7 @@ public class FileParser {
         return contentType;
     }
 
-
     public String getContentLength() {
-        return "";
+        return String.valueOf(requestFile.length());
     }
 }

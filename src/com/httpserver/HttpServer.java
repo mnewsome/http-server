@@ -15,12 +15,13 @@ public class HttpServer {
     public void start() throws IOException{
         try {
             ServerSocket serverSocket = new ServerSocket(portNumber);
-            Socket clientSocket = serverSocket.accept();
-            System.out.println("Server listening on port " + portNumber);
+            while (true) {
+                Socket clientSocket = serverSocket.accept();
+                System.out.println("Server listening on port " + portNumber);
 
-            ServerThread serverThread = new ServerThread("public", clientSocket);
-            serverThread.run();
-
+                new ServerThread("public", clientSocket).start();
+//                serverThread.run();
+            }
         } catch (IOException e) {
             System.out.println("Error occurred while listening on port " + portNumber );
             e.printStackTrace();

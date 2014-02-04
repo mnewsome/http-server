@@ -15,12 +15,13 @@ public class RequestDirectorTest {
 
     @Test
     public void testGetRequest() throws IOException {
+        String requestLine = "GET /index.html HTTP/1.1";
         ServerSocket ss = new ServerSocket(5000);
         Socket testSocket = ss.accept();
         BufferedReader input = new BufferedReader(new InputStreamReader(testSocket.getInputStream()));
-        RequestDirector requestDirector = new RequestDirector(input);
+        RequestDirector requestDirector = new RequestDirector();
         ss.close();
-        assertEquals("Request line", "GET /index.html HTTP/1.1", requestDirector.getRequest());
+        assertEquals("Request line", "GET /index.html HTTP/1.1", requestDirector.getRequest(input));
     }
 
     @Test
@@ -29,7 +30,7 @@ public class RequestDirectorTest {
         ServerSocket ss = new ServerSocket(5000);
         Socket testSocket = ss.accept();
         BufferedReader input = new BufferedReader(new InputStreamReader(testSocket.getInputStream()));
-        RequestDirector requestDirector = new RequestDirector(input);
+        RequestDirector requestDirector = new RequestDirector();
         ss.close();
         assertEquals("Request method", "GET", requestDirector.getRequestMethod(requestLine));
     }
@@ -37,11 +38,20 @@ public class RequestDirectorTest {
     @Test
     public void  testGetRequestFileName() throws IOException {
         String requestLine = "GET /index.html HTTP/1.1";
-        ServerSocket ss = new ServerSocket(5000);
-        Socket testSocket = ss.accept();
-        BufferedReader input = new BufferedReader(new InputStreamReader(testSocket.getInputStream()));
-        RequestDirector requestDirector = new RequestDirector(input);
+//        ServerSocket ss = new ServerSocket(5000);
+//        Socket testSocket = ss.accept();
+//        BufferedReader input = new BufferedReader(new InputStreamReader(testSocket.getInputStream()));
+        RequestDirector requestDirector = new RequestDirector();
         assertEquals("Request File", "/index.html", requestDirector.getRequestFile(requestLine));
+    }
+
+    @Test
+    public void testRouteRequestAndGeResponse() {
+        String requestURI = "/";
+        RequestDirector requestDirector = new RequestDirector();
+
+        assertEquals("Response", "Hello", requestDirector.routeRequestAndGetResponse(requestURI));
+
     }
 
 }

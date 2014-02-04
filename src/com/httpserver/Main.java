@@ -17,6 +17,7 @@ public class Main {
         try {
             httpServer.start();
         } catch (IOException e) {
+            System.out.println("Server could not be started.");
             e.printStackTrace();
         }
     }
