@@ -21,8 +21,12 @@ public class RequestDirector {
     }
 
     public String getRequestFile(String request) {
-        String[] headerLineParts = getHeaderLineParts(request);
-        String fileName = headerLineParts[1];
+        System.out.println("request file" + request);
+        String fileName = "";
+        if (!request.equals("")) {
+            String[] headerLineParts = getHeaderLineParts(request);
+            fileName = headerLineParts[1];
+        }
         return fileName;
     }
 
@@ -44,7 +48,7 @@ public class RequestDirector {
             response = new MethodOptionsResponse().generate(requestURI);
         else if (requestURI.equals("/file1"))
             response = new MethodNotAllowedResponse().generate(requestURI);
-        else if (requestURI.equals("/text-file.txt"))
+        else if (requestURI.equals("/text-file.txt") || requestURI.equals("/file1"))
             response = new MethodNotAllowedResponse().generate(requestURI);
         else if (requestURI.equals("/form"))
             response = new StandardSuccessResponse().generate(requestURI);
@@ -72,7 +76,6 @@ public class RequestDirector {
             fileExists = true;
         else
             fileExists = false;
-        System.out.println(fileExists);
         return fileExists;
     }
 

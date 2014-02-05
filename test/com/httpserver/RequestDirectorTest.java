@@ -37,12 +37,9 @@ public class RequestDirectorTest {
 
     @Test
     public void  testGetRequestFileName() throws IOException {
-        String requestLine = "GET /index.html HTTP/1.1";
-//        ServerSocket ss = new ServerSocket(5000);
-//        Socket testSocket = ss.accept();
-//        BufferedReader input = new BufferedReader(new InputStreamReader(testSocket.getInputStream()));
+        String requestLine = "GET / HTTP/1.1";
         RequestDirector requestDirector = new RequestDirector();
-        assertEquals("Request File", "/index.html", requestDirector.getRequestFile(requestLine));
+        assertEquals("Request File", "/", requestDirector.getRequestFile(requestLine));
     }
 
     @Test
