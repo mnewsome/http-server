@@ -48,6 +48,8 @@ public class RequestDirector {
             response = new MethodNotAllowedResponse().generate(requestURI);
         else if (requestURI.equals("/form"))
             response = new StandardSuccessResponse().generate(requestURI);
+        else if (requestURI.contains("/parameters?"))
+            response = new ParameterDecodeResponse().generate(requestURI);
         else if (isDirectory(requestURI))
             response = new DirectoryListingResponse().generate(requestURI);
         else if (fileExists(requestURI))
