@@ -46,6 +46,8 @@ public class RequestDirector {
             response = new MethodNotAllowedResponse().generate(requestURI);
         else if (requestURI.equals("/text-file.txt"))
             response = new MethodNotAllowedResponse().generate(requestURI);
+        else if (requestURI.equals("/form"))
+            response = new StandardSuccessResponse().generate(requestURI);
         else if (isDirectory(requestURI))
             response = new DirectoryListingResponse().generate(requestURI);
         else if (fileExists(requestURI))

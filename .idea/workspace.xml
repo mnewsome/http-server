@@ -105,7 +105,36 @@
       <file leaf-file-name="RequestDirector.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestDirector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.31666666" vertical-offset="548" max-vertical-offset="2180">
+            <state line="49" column="28" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.775" vertical-offset="568" max-vertical-offset="2220">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StandardSuccessResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="35" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="320">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StandardSuccessResponseTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/httpserver/StandardSuccessResponseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="400">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MockStandardSuccessResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/httpserver/MockStandardSuccessResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="24" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -191,6 +220,9 @@
         <option value="$PROJECT_DIR$/src/com/httpserver/MockMethodNotAllowed.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/MethodNotAllowedResponseTest.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/RequestDirector.java" />
+        <option value="$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java" />
+        <option value="$PROJECT_DIR$/test/com/httpserver/StandardSuccessResponseTest.java" />
+        <option value="$PROJECT_DIR$/src/com/httpserver/MockStandardSuccessResponse.java" />
       </list>
     </option>
   </component>
@@ -342,7 +374,7 @@
       <recent name="com.httpserver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MethodNotAllowedResponseTest">
+  <component name="RunManager" selected="JUnit.StandardSuccessResponseTest">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.httpserver.Main" />
@@ -363,28 +395,6 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MethodOptionsResponseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="http_server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.httpserver" />
-      <option name="MAIN_CLASS_NAME" value="com.httpserver.MethodOptionsResponseTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -438,6 +448,28 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.httpserver" />
       <option name="MAIN_CLASS_NAME" value="com.httpserver.MethodNotAllowedResponseTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="StandardSuccessResponseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="http_server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.httpserver" />
+      <option name="MAIN_CLASS_NAME" value="com.httpserver.StandardSuccessResponseTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -557,18 +589,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MethodOptionsResponseTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BasicAuthResponseTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FileResponseTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MethodNotAllowedResponseTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BasicAuthResponseTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FileResponseTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MethodNotAllowedResponseTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StandardSuccessResponseTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MethodNotAllowedResponseTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BasicAuthResponseTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FileResponseTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MethodOptionsResponseTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StandardSuccessResponseTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MethodNotAllowedResponseTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BasicAuthResponseTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FileResponseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -600,7 +632,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="172" width="1600" height="940" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -620,7 +652,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3903559" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3903559" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -962,9 +994,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/MockStandardSuccessResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="24" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="35" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/StandardSuccessResponseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="400">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestDirector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.31666666" vertical-offset="548" max-vertical-offset="2180">
+        <state line="49" column="28" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.775" vertical-offset="568" max-vertical-offset="2220">
           <folding />
         </state>
       </provider>
