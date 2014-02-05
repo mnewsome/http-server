@@ -2,7 +2,7 @@ package com.httpserver;
 
 import java.util.Date;
 
-public class PartialContentResponse extends ResponseGenerator{
+public class PartialContentResponse extends ResponseGenerator {
     @Override
     public String generate(String requestURI) {
         FileParser fileParser = new FileParser(requestURI);

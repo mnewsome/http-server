@@ -12,4 +12,11 @@ public class DirectoryListingResponseTest {
         String directoryListing = new DirectoryListingResponse().generate("/Users/mnewsome/Public/");
         assertEquals("Directory Listing Response", testDirectoryListing, directoryListing);
     }
+
+    private class MockDirectoryListingResponse {
+        public String generate(String requestURI) {
+            String response = ".com.apple.timemachine.supported .localized Drop Box favicon.ico index.html ";
+            return response;
+        }
+    }
 }

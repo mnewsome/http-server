@@ -62,7 +62,8 @@ public class FileParser {
     }
 
     private byte[] getFileData(String requestURI) {
-        File requestedFile = new File(requestURI.substring(1, requestURI.length()));
+        File requestedFile = getRequestedFile(requestURI);
+
         byte[] fileData = new byte[(int)requestedFile.length()];
         try {
             FileInputStream fileInputStream = new FileInputStream(requestedFile);
@@ -72,5 +73,15 @@ public class FileParser {
             e.printStackTrace();
         }
         return fileData;
+    }
+
+    private File getRequestedFile(String requestURI) {
+        File requestedFile;
+        if (requestURI.startsWith("/"))
+            requestedFile = new File(requestURI.substring(1, requestURI.length()));
+        else
+            requestedFile = new File(requestURI);
+
+        return requestedFile;
     }
 }

@@ -56,12 +56,14 @@ public class RequestDirector {
             response = new ParameterDecodeResponse().generate(requestURI);
         else if (requestURI.equals("/partial_content.txt"))
             response = new PartialContentResponse().generate(requestURI);
+        else if (requestURI.equals("/redirect"))
+            response = new RedirectResponse().generate(requestURI);
         else if (isDirectory(requestURI))
             response = new DirectoryListingResponse().generate(requestURI);
         else if (fileExists(requestURI))
             response = new FileResponse().generate(requestURI.replace("/", ""));
         else if (!fileExists(requestURI))
-            response = new FileDoesNotExist().generate(requestURI);
+            response = new FileDoesNotExistResponse().generate(requestURI);
 
         System.out.println(response);
         return response;
