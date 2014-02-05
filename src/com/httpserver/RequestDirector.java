@@ -42,6 +42,10 @@ public class RequestDirector {
             response = new BasicAuthResponse().generate(requestURI);
         else if (requestURI.equals("/method_options"))
             response = new MethodOptionsResponse().generate(requestURI);
+        else if (requestURI.equals("/file1"))
+            response = new MethodNotAllowedResponse().generate(requestURI);
+        else if (requestURI.equals("/text-file.txt"))
+            response = new MethodNotAllowedResponse().generate(requestURI);
         else if (isDirectory(requestURI))
             response = new DirectoryListingResponse().generate(requestURI);
         else if (fileExists(requestURI))

@@ -17,16 +17,4 @@ public class ResponseGeneratorTest {
         assertEquals("Request of root returns hello world", testResponse, rr.generate("/"));
     }
 
-//    @Test
-//    public void testAuthenticationResponse() {
-//        Map<String, String> testHash = new HashMap<String, String>();
-//        testHash.put("401 Unauthorized", "Authentication required");
-//
-//        ResponseGenerator rg = new ResponseGenerator("/logs");
-//        assertEquals("Authentication Required", testHash, rg.authenticationResponse());
-//
-//    }
-
-
-
 }
