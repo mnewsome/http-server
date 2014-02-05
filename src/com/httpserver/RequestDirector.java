@@ -50,6 +50,8 @@ public class RequestDirector {
             response = new StandardSuccessResponse().generate(requestURI);
         else if (requestURI.contains("/parameters?"))
             response = new ParameterDecodeResponse().generate(requestURI);
+        else if (requestURI.equals("/partial_content.txt"))
+            response = new PartialContentResponse().generate(requestURI);
         else if (isDirectory(requestURI))
             response = new DirectoryListingResponse().generate(requestURI);
         else if (fileExists(requestURI))

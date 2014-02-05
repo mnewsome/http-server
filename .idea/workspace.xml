@@ -69,61 +69,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RootResponseTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/httpserver/RootResponseTest.java">
+      <file leaf-file-name="FileParserTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/httpserver/FileParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="61" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestDirector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestDirector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="27" selection-start="1930" selection-end="1930" vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="2260">
+            <state line="70" column="58" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.625" vertical-offset="1060" max-vertical-offset="1540">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParameterDecodeResponse.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/httpserver/ParameterDecodeResponse.java">
+      <file leaf-file-name="FileInputStream.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="8" selection-start="570" selection-end="971" vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="660">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParameterDecodeResponseTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/httpserver/ParameterDecodeResponseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="32" selection-start="204" selection-end="204" vertical-scroll-proportion="-2.2222223" vertical-offset="80" max-vertical-offset="780">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MethodNotAllowedResponseTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/httpserver/MethodNotAllowedResponseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="34" selection-start="301" selection-end="301" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="500">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MockFileResponse.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/httpserver/MockFileResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="138" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="700">
+            <state line="145" column="0" selection-start="4823" selection-end="4823" vertical-scroll-proportion="0.0" vertical-offset="2240" max-vertical-offset="8460">
               <folding />
             </state>
           </provider>
@@ -132,8 +90,55 @@
       <file leaf-file-name="RootResponse.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/httpserver/RootResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="215" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="460">
+            <state line="12" column="60" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="460">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StandardSuccessResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="35" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="320">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/httpserver/FileResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="165" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="580">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestDirector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestDirector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="30" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="2300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartialContentResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/httpserver/PartialContentResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="15" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartialContentResponseTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/httpserver/PartialContentResponseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="41" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="760">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,8 +171,6 @@
         <option value="$PROJECT_DIR$/test/com/httpserver/MockFileDoesNotExistResponse.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/FileDoesNotExist.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/MockDirectoryListingResponse.java" />
-        <option value="$PROJECT_DIR$/src/com/httpserver/FileParser.java" />
-        <option value="$PROJECT_DIR$/test/com/httpserver/FileParserTest.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/ServerThread.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/RootResponse.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/DirectoryListingResponse.java" />
@@ -176,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/com/httpserver/MethodOptionsResponse.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/MockBasicAuthResponse.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/BasicAuthResponse.java" />
-        <option value="$PROJECT_DIR$/src/com/httpserver/FileResponse.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/MockImageResponse.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/BasicAuthResponseTest.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/ResponseGenerator.java" />
@@ -190,12 +192,17 @@
         <option value="$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/StandardSuccessResponseTest.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/MockStandardSuccessResponse.java" />
-        <option value="$PROJECT_DIR$/src/com/httpserver/RequestDirector.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/ParameterDecodeResponse.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/MockFileResponse.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/ParameterDecodeResponseTest.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/MockMethodNotAllowed.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/MethodNotAllowedResponseTest.java" />
+        <option value="$PROJECT_DIR$/src/com/httpserver/RequestDirector.java" />
+        <option value="$PROJECT_DIR$/src/com/httpserver/FileResponse.java" />
+        <option value="$PROJECT_DIR$/src/com/httpserver/PartialContentResponse.java" />
+        <option value="$PROJECT_DIR$/test/com/httpserver/PartialContentResponseTest.java" />
+        <option value="$PROJECT_DIR$/test/com/httpserver/FileParserTest.java" />
+        <option value="$PROJECT_DIR$/src/com/httpserver/FileParser.java" />
       </list>
     </option>
   </component>
@@ -348,7 +355,7 @@
       <recent name="com.httpserver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParameterDecodeResponseTest.testGenerate">
+  <component name="RunManager" selected="JUnit.FileParserTest">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.httpserver.Main" />
@@ -372,72 +379,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="BasicAuthResponseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="http_server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.httpserver" />
-      <option name="MAIN_CLASS_NAME" value="com.httpserver.BasicAuthResponseTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MethodNotAllowedResponseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="http_server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.httpserver" />
-      <option name="MAIN_CLASS_NAME" value="com.httpserver.MethodNotAllowedResponseTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="StandardSuccessResponseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="http_server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.httpserver" />
-      <option name="MAIN_CLASS_NAME" value="com.httpserver.StandardSuccessResponseTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="ParameterDecodeResponseTest.testGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="http_server" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -446,6 +387,76 @@
       <option name="MAIN_CLASS_NAME" value="com.httpserver.ParameterDecodeResponseTest" />
       <option name="METHOD_NAME" value="testGenerate" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PartialContentResponseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="http_server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.httpserver" />
+      <option name="MAIN_CLASS_NAME" value="com.httpserver.PartialContentResponseTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FileParserTest.testIsNotImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="http_server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.httpserver" />
+      <option name="MAIN_CLASS_NAME" value="com.httpserver.FileParserTest" />
+      <option name="METHOD_NAME" value="testIsNotImage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FileParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="http_server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.httpserver" />
+      <option name="MAIN_CLASS_NAME" value="com.httpserver.FileParserTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -563,18 +574,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BasicAuthResponseTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MethodNotAllowedResponseTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.StandardSuccessResponseTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParameterDecodeResponseTest.testGenerate" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParameterDecodeResponseTest.testGenerate" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PartialContentResponseTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FileParserTest.testIsNotImage" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FileParserTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ParameterDecodeResponseTest.testGenerate" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.StandardSuccessResponseTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MethodNotAllowedResponseTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BasicAuthResponseTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FileParserTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FileParserTest.testIsNotImage" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PartialContentResponseTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ParameterDecodeResponseTest.testGenerate" />
       </list>
     </recent_temporary>
   </component>
@@ -606,7 +617,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="172" width="1600" height="940" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -615,7 +626,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39949748" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39839265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3564568" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -626,7 +637,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3903559" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3903559" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -664,7 +675,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/httpserver/FileParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="18" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0" vertical-offset="880" max-vertical-offset="1060">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -761,20 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/FileParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="80" selection-start="1258" selection-end="1258" vertical-scroll-proportion="-4.296296" vertical-offset="708" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/httpserver/FileParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="32" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="1420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/httpserver/MockFileDoesNotExistResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="384" selection-end="384" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="380">
@@ -823,15 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="25" selection-start="245" selection-end="245" vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="480">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/FileResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1020">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,20 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="288" selection-end="288" vertical-scroll-proportion="0.29166666" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestDirector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="27" selection-start="1930" selection-end="1930" vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="2260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/httpserver/ResponseGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="28" selection-start="95" selection-end="95" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="480">
@@ -959,16 +935,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RootResponse.java">
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/MethodNotAllowedResponseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="215" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="460">
+        <state line="6" column="43" selection-start="138" selection-end="138" vertical-scroll-proportion="0.125" vertical-offset="20" max-vertical-offset="500">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/httpserver/RootResponseTest.java">
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/ParameterDecodeResponseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="61" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+        <state line="10" column="32" selection-start="204" selection-end="204" vertical-scroll-proportion="0.27522936" vertical-offset="80" max-vertical-offset="780">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -977,7 +953,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/httpserver/ParameterDecodeResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="570" selection-end="971" vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="660">
+        <state line="16" column="8" selection-start="570" selection-end="971" vertical-scroll-proportion="0.32405567" vertical-offset="157" max-vertical-offset="660">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -986,23 +962,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/httpserver/MockFileResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="138" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="700">
+        <state line="6" column="8" selection-start="138" selection-end="168" vertical-scroll-proportion="0.13121273" vertical-offset="54" max-vertical-offset="700">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/httpserver/ParameterDecodeResponseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestDirector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="204" selection-end="204" vertical-scroll-proportion="-2.2222223" vertical-offset="80" max-vertical-offset="780">
+        <state line="53" column="30" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="2300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RootResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="60" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="35" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/FileResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="165" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="0" selection-start="4823" selection-end="4823" vertical-scroll-proportion="0.0" vertical-offset="2240" max-vertical-offset="8460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/PartialContentResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="15" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/PartialContentResponseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="41" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="760">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/httpserver/MethodNotAllowedResponseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/FileParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="34" selection-start="301" selection-end="301" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="500">
+        <state line="63" column="11" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.614561" vertical-offset="973" max-vertical-offset="1640">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/RootResponseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="61" selection-start="320" selection-end="320" vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="480">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/FileParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="58" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.625" vertical-offset="1060" max-vertical-offset="1540">
           <folding />
         </state>
       </provider>

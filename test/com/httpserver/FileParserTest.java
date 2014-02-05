@@ -64,4 +64,10 @@ public class FileParserTest {
         FileParser fp = new FileParser("image.html");
         assertFalse(fp.isImage());
     }
+
+    @Test
+    public void testGetDecodedFile() {
+        FileParser fp = new FileParser("/partial_content.txt");
+        assertEquals("Decoded file", "I like to eat food\n", fp.getDecodedFile("/partial_content.txt"));
+    }
 }
