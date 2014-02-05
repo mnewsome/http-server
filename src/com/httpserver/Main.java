@@ -13,7 +13,9 @@ public class Main {
             portNumber = 5000;
         }
 
-        HttpServer httpServer = new HttpServer(portNumber);
+        RequestDirector requestDirector = new RequestDirector();
+
+        HttpServer httpServer = new HttpServer(portNumber, requestDirector);
         try {
             httpServer.start();
         } catch (IOException e) {

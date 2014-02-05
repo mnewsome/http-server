@@ -9,10 +9,12 @@ import java.net.Socket;
 public class ServerThread extends Thread{
     private final String rootDirectory;
     private final Socket clientSocket;
+    private final RequestDirector requestDirector;
 
-    public ServerThread(String rootDirectory, Socket clientSocket) {
+    public ServerThread(String rootDirectory, Socket clientSocket, RequestDirector requestDirector) {
         this.rootDirectory = rootDirectory;
         this.clientSocket = clientSocket;
+        this.requestDirector = requestDirector;
     }
 
     public void run() {
@@ -21,11 +23,9 @@ public class ServerThread extends Thread{
 
         try {
             input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-            RequestDirector requestDirector = new RequestDirector();
-            String request = requestDirector.getRequest(input);
-            System.out.println(request);
-            String requestURI = requestDirector.getRequestFile(request);
-            String response = requestDirector.routeRequestAndGetResponse(requestURI);
+            RequestParser requestParser = new RequestParser();
+            String request = requestParser.getRequest(input);
+            String response = requestDirector.routeRequestAndGetResponse(request);
             output = new DataOutputStream(clientSocket.getOutputStream());
             output.writeBytes(response);
             output.close();

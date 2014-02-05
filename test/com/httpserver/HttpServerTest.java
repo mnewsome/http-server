@@ -13,8 +13,8 @@ public class HttpServerTest {
     @Test
     public void testStartSeverIOError() throws Exception {
         System.out.println("Starting httpServer");
-
-        HttpServer httpServer = new HttpServer(5000);
+        RequestDirector requestDirector = new RequestDirector();
+        HttpServer httpServer = new HttpServer(5000, requestDirector);
         httpServer.start();
         thrown.expect(IOException.class);
     }

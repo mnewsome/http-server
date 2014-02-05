@@ -6,10 +6,11 @@ import java.net.Socket;
 
 public class HttpServer {
     private final int portNumber;
+    private final RequestDirector requestDirector;
 
-    public HttpServer(int portNumber) {
+    public HttpServer(int portNumber, RequestDirector requestDirector) {
         this.portNumber = portNumber;
-
+        this.requestDirector = requestDirector;
     }
 
     public void start() throws IOException{
@@ -19,7 +20,7 @@ public class HttpServer {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("Server listening on port " + portNumber);
 
-                new ServerThread("public", clientSocket).start();
+                new ServerThread("public", clientSocket, requestDirector).start();
 //                serverThread.run();
             }
         } catch (IOException e) {

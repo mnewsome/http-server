@@ -6,39 +6,9 @@ import java.io.*;
 
 public class RequestDirector {
 
-    public String getRequest(BufferedReader clientInput) throws IOException {
-        StringBuilder request = new StringBuilder();
-        while (clientInput.ready()) {
-            request.append((char) clientInput.read());
-        }
-        return request.toString();
-    }
-
-    public String getRequestMethod(String request) {
-        String[] headerLineParts = getHeaderLineParts(request);
-        String requestMethod = headerLineParts[0];
-        return requestMethod;
-    }
-
-    public String getRequestFile(String request) {
-        System.out.println("request file" + request);
-        String fileName = "";
-        if (!request.equals("")) {
-            String[] headerLineParts = getHeaderLineParts(request);
-            fileName = headerLineParts[1];
-        }
-        return fileName;
-    }
-
-    private String[] getHeaderLineParts(String request) {
-        String[] headerLine = request.split("\r\n");
-        String[] headerLineParts = headerLine[0].split(" ");
-        return headerLineParts;
-    }
-
-
-    public String routeRequestAndGetResponse(String requestURI) {
+    public String routeRequestAndGetResponse(String request) {
         String response = "";
+        String requestURI = new RequestParser().getRequestURI(request);
 
         if (requestURI.equals("/"))
             response = new RootResponse().generate(requestURI);
