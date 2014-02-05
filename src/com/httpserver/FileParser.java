@@ -19,7 +19,7 @@ public class FileParser {
         return root;
     }
 
-    public boolean getRequestFile() {
+    public boolean isDirectory() {
         return requestFile.endsWith("/");
     }
 
@@ -42,5 +42,10 @@ public class FileParser {
 
     public String getContentLength() {
         return String.valueOf(requestFile.length());
+    }
+
+    public boolean isImage() {
+        if (requestFile.endsWith(".jpeg") || requestFile.endsWith(".png") || requestFile.endsWith(".gif")) return  true;
+        else return false;
     }
 }

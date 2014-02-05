@@ -1,9 +1,8 @@
 package com.httpserver;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.imageio.stream.ImageInputStream;
+import java.io.*;
 
 public class RequestDirector {
 
@@ -37,38 +36,66 @@ public class RequestDirector {
     public String routeRequestAndGetResponse(String requestURI) {
         String response = "";
 
-//        if (requestURI.equals("/"))
-//            response = new RootResponse().generate(requestURI);
-        if (isDirectory(requestURI))
+        if (requestURI.equals("/"))
+            response = new RootResponse().generate(requestURI);
+        else if (requestURI.equals("/logs"))
+            response = new BasicAuthResponse().generate(requestURI);
+        else if (requestURI.equals("/method_options"))
+            response = new MethodOptionsResponse().generate(requestURI);
+        else if (isDirectory(requestURI))
             response = new DirectoryListingResponse().generate(requestURI);
         else if (fileExists(requestURI))
             response = new FileResponse().generate(requestURI.replace("/", ""));
         else if (!fileExists(requestURI))
             response = new FileDoesNotExist().generate(requestURI);
 
+        System.out.println(response);
         return response;
 
     }
 
     private Boolean fileExists (String requestURI) {
-        Boolean fileExists = true;
-
-        try {
-            File file = new File(requestURI.substring(1, requestURI.length()));
-            FileInputStream fileStream = new FileInputStream(file);
-            FileParser fileParser = new FileParser(requestURI);
-            byte[] fileData = new byte[((int)requestURI.length())];
-            fileStream.read(fileData);
-            fileStream.close();
-        } catch (Exception e) {
+        Boolean fileExists;
+        if (isFileFound(requestURI))
+            fileExists = true;
+        else if (isImageFound(requestURI))
+            fileExists = true;
+        else
             fileExists = false;
-        }
-
+        System.out.println(fileExists);
         return fileExists;
     }
 
     private Boolean isDirectory (String requestURI) {
         if (requestURI.endsWith("/")) return true;
         else return false;
+    }
+
+    private Boolean isFileFound(String requestURI) {
+        Boolean fileExists = true;
+        try {
+            File file = new File(requestURI.substring(1, requestURI.length()));
+            FileInputStream fileStream = new FileInputStream(file);
+            byte[] fileData = new byte[((int)requestURI.length())];
+            fileStream.read(fileData);
+            fileStream.close();
+        } catch (Exception e) {
+            fileExists = false;
+        }
+        return fileExists;
+    }
+
+    private Boolean isImageFound(String requestURI) {
+        Boolean imageExists = true;
+        try {
+            InputStream inputStream = new FileInputStream(requestURI);
+            ImageInputStream imageInputStream = ImageIO.createImageInputStream(inputStream);
+            ImageIO.read(inputStream);
+
+        } catch (Exception e) {
+            imageExists = false;
+        }
+        return imageExists;
+
     }
 }

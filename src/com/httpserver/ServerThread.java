@@ -23,6 +23,7 @@ public class ServerThread extends Thread{
             input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             RequestDirector requestDirector = new RequestDirector();
             String request = requestDirector.getRequest(input);
+            System.out.println(request);
             String requestURI = requestDirector.getRequestFile(request);
             String response = requestDirector.routeRequestAndGetResponse(requestURI);
             output = new DataOutputStream(clientSocket.getOutputStream());
