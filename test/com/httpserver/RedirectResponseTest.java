@@ -15,9 +15,8 @@ public class RedirectResponseTest {
 
     private class MockRedirectResponse {
         public String generate(String requestURI) {
-            String response = "HTTP/1.1 200 OK\r\n" +
-                    "Refresh: 0; url=http://localhost:5000/\r\n" +
-                    "Content-type: text/html\r\n";
+            String response = "HTTP/1.1 301 Permanently Moved\r\n" +
+            "Location: http://localhost:5000/\r\n";
             return  response;
         }
     }

@@ -8,7 +8,9 @@ public class RequestDirector {
 
     public String routeRequestAndGetResponse(String request) {
         String response = "";
-        String requestURI = new RequestParser().getRequestURI(request);
+        RequestParser requestParser = new RequestParser();
+        String requestURI = requestParser.getRequestURI(request);
+        String requestMethod = requestParser.getRequestMethod(request);
 
         if (requestURI.equals("/"))
             response = new RootResponse().generate(requestURI);
@@ -16,9 +18,9 @@ public class RequestDirector {
             response = new BasicAuthResponse().generate(requestURI);
         else if (requestURI.equals("/method_options"))
             response = new MethodOptionsResponse().generate(requestURI);
-        else if (requestURI.equals("/file1"))
-            response = new MethodNotAllowedResponse().generate(requestURI);
-        else if (requestURI.equals("/text-file.txt") || requestURI.equals("/file1"))
+        else if (requestURI.equals("/file1") && requestMethod.equals("GET"))
+            response = new FileResponse().generate(requestURI);
+        else if ((requestURI.equals("/text-file.txt") && requestMethod.equals("POST")) || (requestURI.equals("/file1") && requestMethod.equals("PUT")))
             response = new MethodNotAllowedResponse().generate(requestURI);
         else if (requestURI.equals("/form"))
             response = new StandardSuccessResponse().generate(requestURI);
@@ -30,15 +32,10 @@ public class RequestDirector {
             response = new RedirectResponse().generate(requestURI);
         else if (requestURI.equals("/image.jpeg") || requestURI.equals("/image.gif") || requestURI.equals("/image.png"))
             response = new ImageResponse().generate(requestURI);
-
-//        else if (isDirectory(requestURI))
-//            response = new DirectoryListingResponse().generate(requestURI);
-        else if (fileExists(requestURI))
-            response = new FileResponse().generate(requestURI.replace("/", ""));
-        else if (!fileExists(requestURI))
+        else if (requestURI.equals("/foobar"))
             response = new FileDoesNotExistResponse().generate(requestURI);
-
         System.out.println(response);
+        System.out.println(requestMethod);
         return response;
 
     }
