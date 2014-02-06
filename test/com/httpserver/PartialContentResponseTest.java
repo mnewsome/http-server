@@ -23,7 +23,7 @@ public class PartialContentResponseTest {
                 "Server: Newsome-HTTP-Server\r\n" +
                 "Content-length: 20\r\n" +
                 "Content-type: text/plain\r\n\r\n" +
-                "I like to eat food\n:wq:";
+                "I like to eat food!\r\n";
 
             return response;
         }

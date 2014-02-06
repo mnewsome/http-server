@@ -7,8 +7,7 @@ public class RootResponse extends ResponseGenerator{
     @Override
     public String generate(String requestURI) {
         StringBuilder response = new StringBuilder();
-
-        File directory = new File(requestURI);
+        File directory = new File("/Users/mnewsome/cob_spec/public/");
         File[] fileListing = directory.listFiles();
 
         Date currentTime = new Date();
@@ -19,8 +18,8 @@ public class RootResponse extends ResponseGenerator{
         response.append("<HTML><HEAD><TITLE>You got served!</TITLE><HEAD>");
         response.append("<BODY><H1>Hello World</H1>");
 
-        for (File file : fileListing) {
-            response.append(file.getName().toString() + " ");
+        for (String file : directory.list()) {
+            response.append("<a href=\"/" + file +"\">" + file +"</a>\r\n");
         }
 
         response.append("</BODY></HTML>");

@@ -5,13 +5,9 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args){
-        int portNumber;
+        int portNumber = 5000;
+        String rootDirectory = "/Users/mnewsome/cob_spec/public";
 
-        try {
-            portNumber = Integer.parseInt(args[0]);
-        } catch (Exception e) {
-            portNumber = 5000;
-        }
 
         RequestDirector requestDirector = new RequestDirector();
 
@@ -22,5 +18,15 @@ public class Main {
             System.out.println("Server could not be started.");
             e.printStackTrace();
         }
+    }
+
+    private static int getPortNumber(String arg) {
+        int portNumber;
+        try {
+            portNumber = Integer.parseInt(arg);
+        } catch (Exception e) {
+            portNumber = 5000;
+        }
+        return portNumber;
     }
 }

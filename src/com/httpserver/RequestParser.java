@@ -9,6 +9,7 @@ public class RequestParser {
         while (clientInput.ready()) {
             request.append((char) clientInput.read());
         }
+        System.out.println(request.toString());
         return request.toString();
     }
 

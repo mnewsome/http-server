@@ -28,8 +28,11 @@ public class RequestDirector {
             response = new PartialContentResponse().generate(requestURI);
         else if (requestURI.equals("/redirect"))
             response = new RedirectResponse().generate(requestURI);
-        else if (isDirectory(requestURI))
-            response = new DirectoryListingResponse().generate(requestURI);
+        else if (requestURI.equals("/image.jpeg") || requestURI.equals("/image.gif") || requestURI.equals("/image.png"))
+            response = new ImageResponse().generate(requestURI);
+
+//        else if (isDirectory(requestURI))
+//            response = new DirectoryListingResponse().generate(requestURI);
         else if (fileExists(requestURI))
             response = new FileResponse().generate(requestURI.replace("/", ""));
         else if (!fileExists(requestURI))

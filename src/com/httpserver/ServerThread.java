@@ -7,12 +7,10 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 
 public class ServerThread extends Thread{
-    private final String rootDirectory;
     private final Socket clientSocket;
     private final RequestDirector requestDirector;
 
-    public ServerThread(String rootDirectory, Socket clientSocket, RequestDirector requestDirector) {
-        this.rootDirectory = rootDirectory;
+    public ServerThread(Socket clientSocket, RequestDirector requestDirector) {
         this.clientSocket = clientSocket;
         this.requestDirector = requestDirector;
     }
