@@ -22,8 +22,9 @@ public class PartialContentResponseTest {
                 "Date: " + currentDateTime + "\r\n" +
                 "Server: Newsome-HTTP-Server\r\n" +
                 "Content-length: 20\r\n" +
-                "Content-type: text/plain\r\n\r\n" +
-                "I like to eat food!\r\n";
+                "Range: bytes=0-4\r\n" +
+                "Content-type: text/html\r\n\r\n" +
+                "<HTML><BODY>This</BODY></HTML>";
 
             return response;
         }

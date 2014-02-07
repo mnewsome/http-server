@@ -27,7 +27,7 @@ public class FileResponseTest {
                     "<html>\n" +
                     "\n" +
                     "<head/>\n" +
-                    "  <title>You got served</title>\n" +
+                    "  <title>You got served from http-server dir</title>\n" +
                     "</head>\n" +
                     "\n" +
                     "<p>Hello World</p>\n" +

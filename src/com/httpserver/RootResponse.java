@@ -15,7 +15,7 @@ public class RootResponse extends ResponseGenerator{
         response.append("Date: " + currentTime + "\r\n");
         response.append("Server: Newsome-HTTP-Server\r\n");
         response.append("Content-type: text/html\r\n\r\n");
-        response.append("<HTML><HEAD><TITLE>You got served!</TITLE><HEAD>");
+        response.append("<HTML><HEAD><TITLE>You got served!</TITLE></HEAD>");
         response.append("<BODY><H1>Hello World</H1>");
 
         for (String file : directory.list()) {

@@ -12,11 +12,8 @@ public class PartialContentResponse extends ResponseGenerator {
         response.append("HTTP/1.1 206 Partial Content\r\n");
         response.append("Date: " + currentDateTime + "\r\n");
         response.append("Server: Newsome-HTTP-Server\r\n");
-        response.append("Content-length: " + fileParser.getContentLength() + "\r\n");
-        response.append("Range: bytes=0-4\r\n");
-        response.append("Content-type: " + fileParser.getContentType() + "\r\n\r\n");
+        response.append("Content-type: text/plain\r\n\r\n");
         response.append(decodedFile.substring(0,4));
-
         return response.toString();
     }
 
