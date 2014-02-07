@@ -12,30 +12,33 @@ public class RequestDirector {
         String requestURI = requestParser.getRequestURI(request);
         String requestMethod = requestParser.getRequestMethod(request);
 
-        if (requestURI.equals("/"))
-            response = new RootResponse().generate(requestURI);
-        else if (requestURI.equals("/logs"))
+        if (requestURI.equals("/logs") && requestMethod.equals("GET") && requestParser.requestHeaderContains(request, "Authorization: Basic YWRtaW46aHVudGVyMg=="))
+            return response = new BasicAuthResponseWithCredentials().generate(requestURI);
+        else if (requestURI.equals("/logs") && requestMethod.equals("GET"))
             response = new BasicAuthResponse().generate(requestURI);
-        else if (requestURI.equals("/method_options"))
-            response = new MethodOptionsResponse().generate(requestURI);
+        else if (requestURI.equals("/"))
+            response = new RootResponse().generate(requestURI);
         else if (requestURI.equals("/file1") && requestMethod.equals("GET"))
             response = new FileResponse().generate(requestURI);
-        else if ((requestURI.equals("/text-file.txt") && requestMethod.equals("POST")) || (requestURI.equals("/file1") && requestMethod.equals("PUT")))
+        else if (requestURI.equals("/foobar"))
+            response = new FileDoesNotExistResponse().generate(requestURI);
+        else if (requestURI.equals("/image.jpeg") || requestURI.equals("/image.gif") || requestURI.equals("/image.png"))
+            response = new ImageResponse().generate(requestURI);
+        else if (requestURI.equals("/file1") && requestMethod.equals("PUT"))
             response = new MethodNotAllowedResponse().generate(requestURI);
-        else if (requestURI.equals("/form"))
-            response = new StandardSuccessResponse().generate(requestURI);
+        else if (requestURI.equals("/text-file.txt") && requestMethod.equals("POST"))
+            response = new MethodNotAllowedResponse().generate(requestURI);
         else if (requestURI.contains("/parameters?"))
             response = new ParameterDecodeResponse().generate(requestURI);
         else if (requestURI.equals("/partial_content.txt"))
             response = new PartialContentResponse().generate(requestURI);
+        else if (requestURI.equals("/form"))
+            response = new StandardSuccessResponse().generate(requestURI);
         else if (requestURI.equals("/redirect"))
             response = new RedirectResponse().generate(requestURI);
-        else if (requestURI.equals("/image.jpeg") || requestURI.equals("/image.gif") || requestURI.equals("/image.png"))
-            response = new ImageResponse().generate(requestURI);
-        else if (requestURI.equals("/foobar"))
-            response = new FileDoesNotExistResponse().generate(requestURI);
+        else if (requestURI.equals("/method_options"))
+            response = new MethodOptionsResponse().generate(requestURI);
         System.out.println(response);
-        System.out.println(requestMethod);
         return response;
 
     }

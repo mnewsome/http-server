@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.io.*;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class RequestParserTest {
 
@@ -28,6 +29,13 @@ public class RequestParserTest {
         String testRequest = getRequest();
         String requestURI = new RequestParser().getRequestURI(testRequest);
         assertEquals("Request URI", "/", requestURI);
+    }
+
+    @Test
+    public void testRequestHeaderContains() {
+       String request = getRequest();
+       boolean headerToTest = new RequestParser().requestHeaderContains(request, "Connection: keep-alive");
+       assertTrue(headerToTest);
     }
 
     private String getRequest() {

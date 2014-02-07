@@ -5,17 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FileParserTest {
-    @Test
-    public void testIsDirectory() {
-        FileParser fp = new FileParser("/root/");
-        assertTrue(fp.isDirectory());
-    }
-
-    @Test
-    public void testIsNotDirectory() {
-        FileParser fp = new FileParser("/root");
-        assertFalse(fp.isDirectory());
-    }
 
     @Test
     public void testGetHTMLContentType() {
@@ -51,18 +40,6 @@ public class FileParserTest {
     public void  testGetContentLength() {
         FileParser fp = new FileParser("index.html");
         assertEquals("Content Length", "10", fp.getContentLength());
-    }
-
-    @Test
-    public void testIsImage() {
-        FileParser fp = new FileParser("image.png");
-        assertTrue(fp.isImage());
-    }
-
-    @Test
-    public void testIsNotImage() {
-        FileParser fp = new FileParser("image.html");
-        assertFalse(fp.isImage());
     }
 
     @Test

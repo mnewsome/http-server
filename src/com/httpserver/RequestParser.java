@@ -34,4 +34,7 @@ public class RequestParser {
         return headerLineParts;
     }
 
+    public boolean requestHeaderContains(String request, String headerToTest) {
+        return request.contains(headerToTest);
+    }
 }

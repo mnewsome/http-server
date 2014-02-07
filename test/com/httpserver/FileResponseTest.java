@@ -17,7 +17,7 @@ public class FileResponseTest {
     private class MockFileResponse {
         public String generate (String requestURI) {
             Date currentTime = new Date();
-            FileParser fileParser = new FileParser(requestURI);
+            FileParser fileParser = new FileParser(requestURI   );
             String response = String.format("HTTP/1.1 200 OK\r\n" +
                     "Date: " + currentTime + "\r\n" +
                     "Server: Newsome-HTTP-Server\r\n" +

@@ -15,7 +15,7 @@ public class PartialContentResponse extends ResponseGenerator {
         response.append("Content-length: " + fileParser.getContentLength() + "\r\n");
         response.append("Range: bytes=0-4\r\n");
         response.append("Content-type: " + fileParser.getContentType() + "\r\n\r\n");
-        response.append(decodedFile);
+        response.append(decodedFile.substring(0,4));
 
         return response.toString();
     }

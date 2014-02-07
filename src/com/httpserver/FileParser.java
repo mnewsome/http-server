@@ -6,23 +6,9 @@ import java.io.UnsupportedEncodingException;
 
 public class FileParser {
     String requestFile;
-    File root;
 
     public FileParser(String requestFile) {
         this.requestFile = requestFile;
-    }
-
-    public File rootDirectory() {
-        try {
-            root = new File(requestFile);
-        } catch (Exception e) {
-            root = new File(".");
-        }
-        return root;
-    }
-
-    public boolean isDirectory() {
-        return requestFile.endsWith("/");
     }
 
     public String getContentType() {
@@ -44,11 +30,6 @@ public class FileParser {
 
     public String getContentLength() {
         return String.valueOf(requestFile.length());
-    }
-
-    public boolean isImage() {
-        if (requestFile.endsWith(".jpeg") || requestFile.endsWith(".png") || requestFile.endsWith(".gif")) return  true;
-        else return false;
     }
 
     public String getDecodedFile(String requestURI) {
@@ -78,7 +59,7 @@ public class FileParser {
     private File getRequestedFile(String requestURI) {
         File requestedFile;
         if (requestURI.startsWith("/"))
-            requestedFile = new File(requestURI.substring(1, requestURI.length()));
+            requestedFile = new File("/Users/mnewsome/cob_spec/public",requestURI.substring(1, requestURI.length()));
         else
             requestedFile = new File(requestURI);
 
