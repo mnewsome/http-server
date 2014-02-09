@@ -9,8 +9,8 @@ import static org.junit.Assert.assertArrayEquals;
 public class FileResponseTest {
     @Test
     public void testGenerate() {
-        byte[] mockFileResponse = new MockFileResponse().generate("index.html");
-        byte[] fileResponse = new FileResponse().generate("index.html");
+        byte[] mockFileResponse = new MockFileResponse().generate("file1");
+        byte[] fileResponse = new FileResponse().generate("file1");
         assertArrayEquals(mockFileResponse, fileResponse);
     }
 
@@ -21,20 +21,10 @@ public class FileResponseTest {
             String response = String.format("HTTP/1.1 200 OK\r\n" +
                     "Date: " + currentTime + "\r\n" +
                     "Server: Newsome-HTTP-Server\r\n" +
-                    "Content-length: "+ fileParser.getContentLength() + "\r\n" +
-                    "Content-type: " + fileParser.getContentType() +"\r\n\r\n" +
-                    "<!DOCTYPE html>\n" +
-                    "<html>\n" +
-                    "\n" +
-                    "<head/>\n" +
-                    "  <title>You got served from http-server dir</title>\n" +
-                    "</head>\n" +
-                    "\n" +
-                    "<p>Hello World</p>\n" +
-                    "\n" +
-                    "<img src=\"http://stream1.gifsoup.com/view/364126/c-breezy-smile-o.gif\" />\n" +
-                    "\n" +
-                    "</html>\n");
+                    "Content-type: text/html\r\n\r\n" +
+                    "<HTML><BODY>" +
+                    "file1 contents\n:::" +
+                    "</BODY></HTML>");
 
             return response.getBytes();
         }
