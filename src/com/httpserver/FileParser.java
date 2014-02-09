@@ -42,7 +42,7 @@ public class FileParser {
         return decodedFile;
     }
 
-    private byte[] getFileData(String requestURI) {
+    public byte[] getFileData(String requestURI) {
         File requestedFile = getRequestedFile(requestURI);
 
         byte[] fileData = new byte[(int)requestedFile.length()];

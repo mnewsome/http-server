@@ -2,22 +2,22 @@ package com.httpserver;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 
 public class RedirectResponseTest {
     @Test
     public void testGenerate() throws Exception {
-        String testResponse = new MockRedirectResponse().generate("/redirect");
-        String response = new RedirectResponse().generate("/redirect");
-        assertEquals("Redirect Response", testResponse, response);
+        byte[] testResponse = new MockRedirectResponse().generate("/redirect");
+        byte[] response = new RedirectResponse().generate("/redirect");
+        assertArrayEquals(testResponse, response);
 
     }
 
     private class MockRedirectResponse {
-        public String generate(String requestURI) {
+        public byte[] generate(String requestURI) {
             String response = "HTTP/1.1 301 Permanently Moved\r\n" +
             "Location: http://localhost:5000/\r\n";
-            return  response;
+            return response.getBytes();
         }
     }
 }

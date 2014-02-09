@@ -5,11 +5,12 @@ import java.util.Date;
 public class MethodOptionsResponse extends ResponseGenerator {
 
     @Override
-    public String generate(String requestURI) {
-        StringBuilder response = new StringBuilder();
+    public byte[] generate(String requestURI) {
+        StringBuilder responseBuilder = new StringBuilder();
         Date currentTime = new Date();
-        response.append("HTTP/1.1 200 OK\r\n");
-        response.append("Allow: GET,HEAD,POST,OPTIONS,PUT\r\n\r\n");
-        return response.toString();
+        responseBuilder.append("HTTP/1.1 200 OK\r\n");
+        responseBuilder.append("Allow: GET,HEAD,POST,OPTIONS,PUT\r\n\r\n");
+        byte[] response = responseBuilder.toString().getBytes();
+        return response;
     }
 }

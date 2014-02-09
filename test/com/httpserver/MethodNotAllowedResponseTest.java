@@ -2,20 +2,20 @@ package com.httpserver;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 
 public class MethodNotAllowedResponseTest {
     @Test
     public void testGenerate() {
-        String testResponse = new MockMethodNotAllowed().generate("/test-file.txt");
-        String response = new MethodNotAllowedResponse().generate("/test-file.txt");
-        assertEquals("Method not allowed", testResponse, response);
+        byte[] testResponse = new MockMethodNotAllowed().generate("/test-file.txt");
+        byte[] response = new MethodNotAllowedResponse().generate("/test-file.txt");
+        assertArrayEquals(testResponse, response);
     }
 
     private class MockMethodNotAllowed {
-        public String generate(String requestURI) {
+        public byte[] generate(String requestURI) {
             String response = "HTTP/1.1 405 Method Not Allowed\r\n";
-            return response;
+            return response.getBytes();
         }
     }
 }

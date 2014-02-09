@@ -23,9 +23,9 @@ public class ServerThread extends Thread{
             input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             RequestParser requestParser = new RequestParser();
             String request = requestParser.getRequest(input);
-            String response = requestDirector.routeRequestAndGetResponse(request);
+            byte[] response = requestDirector.routeRequestAndGetResponse(request);
             output = new DataOutputStream(clientSocket.getOutputStream());
-            output.write(response.getBytes());
+            output.write(response);
             output.close();
             input.close();
 

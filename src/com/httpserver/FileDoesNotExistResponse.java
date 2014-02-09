@@ -4,12 +4,13 @@ import java.util.Date;
 
 public class FileDoesNotExistResponse extends ResponseGenerator{
     @Override
-    public String generate(String requestURI) {
+    public byte[] generate(String requestURI) {
         Date currentDateTime = new Date();
-        StringBuilder response = new StringBuilder();
-        response.append("HTTP/1.1 404 File Not Found\r\n");
-        response.append("Date: " + currentDateTime + "\r\n");
-        response.append("Server: Newsome-HTTP-Server\r\n");
-        return response.toString();
+        StringBuilder responseBuilder = new StringBuilder();
+        responseBuilder.append("HTTP/1.1 404 File Not Found\r\n");
+        responseBuilder.append("Date: " + currentDateTime + "\r\n");
+        responseBuilder.append("Server: Newsome-HTTP-Server\r\n");
+        byte[] response = responseBuilder.toString().getBytes();
+        return response;
     }
 }

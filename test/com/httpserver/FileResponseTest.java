@@ -4,20 +4,20 @@ import org.junit.Test;
 
 import java.util.Date;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 
 public class FileResponseTest {
     @Test
     public void testGenerate() {
-        String mockFileResponse = new MockFileResponse().generate("index.html");
-        String fileResponse = new FileResponse().generate("index.html");
-        assertEquals("File Found Response", mockFileResponse, fileResponse);
+        byte[] mockFileResponse = new MockFileResponse().generate("index.html");
+        byte[] fileResponse = new FileResponse().generate("index.html");
+        assertArrayEquals(mockFileResponse, fileResponse);
     }
 
     private class MockFileResponse {
-        public String generate (String requestURI) {
+        public byte[] generate (String requestURI) {
             Date currentTime = new Date();
-            FileParser fileParser = new FileParser(requestURI   );
+            FileParser fileParser = new FileParser(requestURI);
             String response = String.format("HTTP/1.1 200 OK\r\n" +
                     "Date: " + currentTime + "\r\n" +
                     "Server: Newsome-HTTP-Server\r\n" +
@@ -36,7 +36,7 @@ public class FileResponseTest {
                     "\n" +
                     "</html>\n");
 
-            return response;
+            return response.getBytes();
         }
     }
 }

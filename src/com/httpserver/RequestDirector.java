@@ -6,8 +6,8 @@ import java.io.*;
 
 public class RequestDirector {
 
-    public String routeRequestAndGetResponse(String request) {
-        String response = "";
+    public byte[] routeRequestAndGetResponse(String request) {
+        byte[] response = new byte[0];
         RequestParser requestParser = new RequestParser();
         String requestURI = requestParser.getRequestURI(request);
         String requestMethod = requestParser.getRequestMethod(request);
@@ -38,7 +38,6 @@ public class RequestDirector {
             response = new RedirectResponse().generate(requestURI);
         else if (requestURI.equals("/method_options"))
             response = new MethodOptionsResponse().generate(requestURI);
-        System.out.println(response);
         return response;
 
     }
