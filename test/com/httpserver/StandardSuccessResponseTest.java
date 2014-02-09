@@ -12,7 +12,6 @@ public class StandardSuccessResponseTest {
         assertArrayEquals(testResponse, response);
     }
 
-
     private class MockStandardSuccessResponse {
         public byte[] generate(String requestURI) {
             String response = "HTTP/1.1 200 OK\r\n";

@@ -53,11 +53,6 @@ public class RequestDirector {
         return fileExists;
     }
 
-    private Boolean isDirectory (String requestURI) {
-        if (requestURI.endsWith("/")) return true;
-        else return false;
-    }
-
     private Boolean isFileFound(String requestURI) {
         Boolean fileExists = true;
         try {
