@@ -45,6 +45,13 @@ public class FileParserTest {
     @Test
     public void testGetDecodedFile() {
         FileParser fp = new FileParser("/partial_content.txt");
-        assertEquals("Decoded file", "I like to eat food\n", fp.getDecodedFile("/partial_content.txt"));
+        assertEquals("Decoded file", "This is a file that contains text to read part of in order to fulfill a 206.\n", fp.getDecodedFile("/partial_content.txt"));
+    }
+
+    @Test
+    public void testGetFileData() {
+        FileParser fp = new FileParser("/partial_content");
+        byte[] testData = "This is a file that contains text to read part of in order to fulfill a 206.\n".getBytes();
+        assertArrayEquals(testData, fp.getFileData("/partial_content.txt"));
     }
 }
