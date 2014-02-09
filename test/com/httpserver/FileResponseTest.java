@@ -23,7 +23,7 @@ public class FileResponseTest {
                     "Server: Newsome-HTTP-Server\r\n" +
                     "Content-type: text/html\r\n\r\n" +
                     "<HTML><BODY>" +
-                    "file1 contents\n:::" +
+                    "file1 contents\n" +
                     "</BODY></HTML>");
 
             return response.getBytes();
