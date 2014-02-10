@@ -10,7 +10,6 @@ public class RedirectResponseTest {
         byte[] testResponse = new MockRedirectResponse().generate("/redirect");
         byte[] response = new RedirectResponse().generate("/redirect");
         assertArrayEquals(testResponse, response);
-
     }
 
     private class MockRedirectResponse {

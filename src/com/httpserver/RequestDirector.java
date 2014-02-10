@@ -38,6 +38,7 @@ public class RequestDirector {
             response = new RedirectResponse().generate(requestURI);
         else if (requestURI.equals("/method_options"))
             response = new MethodOptionsResponse().generate(requestURI);
+        System.out.println(response);
         return response;
     }
 }

@@ -20,7 +20,8 @@ public class HttpServer {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("New thread started on port " + portNumber);
 
-                new ServerThread(clientSocket, requestDirector).start();
+                Runnable serverThread = new ServerThread(clientSocket, requestDirector);
+                new Thread(serverThread).start();
             }
         } catch (IOException e) {
             System.out.println("Error occurred while listening on port " + portNumber );

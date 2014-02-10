@@ -13,7 +13,7 @@ public abstract class ResponseGenerator {
         this.responseStatusCode = responseStatusCode;
     }
 
-    private String getStatusLine() {
+    public String getStatusLine() {
         Map<Integer, String> statusLine = new HashMap<Integer, String>();
 
         statusLine.put(200, "200 OK");
@@ -26,18 +26,11 @@ public abstract class ResponseGenerator {
         return "HTTP/1.1 " + statusLine.get(this.responseStatusCode) + "\r\n";
     }
 
-    public byte[] getResponse() {
-        StringBuilder response = new StringBuilder();
-        response.append(getStatusLine());
-        response.append(getContentType());
-        return response.toString().getBytes();
-    }
-
     public void setContentType(String contentType) {
         this.contentType = contentType;
     }
 
-    private String getContentType() {
+    public  String getContentType() {
         return "Content-type: " + this.contentType + "\r\n\r\n";
     }
 }
