@@ -11,10 +11,10 @@ public class ImageResponse extends ResponseGenerator {
         FileParser fileParser = new FileParser(requestURI);
         byte[] imageFile = fileParser.getFileData(requestURI);
         StringBuilder responseBuilder = new StringBuilder();
-        responseBuilder.append("HTTP/1.1 200 OK\r\n");
-        responseBuilder.append("Date: " + currentDateTime + "\r\n");
-        responseBuilder.append("Server: Newsome-HTTP-Server\r\n");
-        responseBuilder.append("Content-type: " + fileParser.getContentLength() + "\r\n\r\n");
+        responseBuilder.append(getStatusLine(200));
+        responseBuilder.append(getDateHeader());
+        responseBuilder.append(getServerInfoHeader());
+        responseBuilder.append(getContentType(fileParser.getContentType()));
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         try {
             outputStream.write(responseBuilder.toString().getBytes());

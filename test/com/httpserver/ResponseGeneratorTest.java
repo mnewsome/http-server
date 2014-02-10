@@ -11,16 +11,14 @@ public class ResponseGeneratorTest {
     public void testGetStatusLine() throws Exception {
         byte[] testStatusLine = "HTTP/1.1 200 OK\r\n".getBytes();
         MockResponseGenerator mrg1 = new MockResponseGenerator();
-        mrg1.setStatus(200);
-        assertArrayEquals(testStatusLine, mrg1.getStatusLine().getBytes());
+        assertArrayEquals(testStatusLine, mrg1.getStatusLine(200).getBytes());
     }
 
     @Test
     public void testGetContentType() {
         byte[] testResponse = "Content-type: text/html\r\n\r\n".getBytes();
         MockResponseGenerator mrg2 = new MockResponseGenerator();
-        mrg2.setContentType("text/html");
-        assertArrayEquals(testResponse, mrg2.getContentType().getBytes());
+        assertArrayEquals(testResponse, mrg2.getContentType("txt/html").getBytes());
     }
 
     @Test
@@ -28,7 +26,6 @@ public class ResponseGeneratorTest {
         Date currentTime = new Date();
         byte[] testResponse = String.format("Date: %s\r\n", currentTime).getBytes();
         MockResponseGenerator mrg3 = new MockResponseGenerator();
-        mrg3.setDate(currentTime);
         assertArrayEquals(testResponse, mrg3.getDateHeader().getBytes());
     }
 

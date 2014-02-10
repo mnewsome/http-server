@@ -29,7 +29,7 @@ public class ImageResponseTest {
             String response = "HTTP/1.1 200 OK\r\n" +
             "Date: " + currentTime + "\r\n" +
             "Server: Newsome-HTTP-Server\r\n" +
-            "Content-type: " + fileParser.getContentLength() + "\r\n\r\n";
+            "Content-type: " + fileParser.getContentType() + "\r\n\r\n";
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
             try {
                 outputStream.write(response.getBytes());

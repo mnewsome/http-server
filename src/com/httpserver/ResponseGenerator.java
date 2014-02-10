@@ -5,26 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class ResponseGenerator {
-    private int responseStatusCode;
-    private String contentType;
     private Date currentTime;
 
 
     public abstract byte[] generate(String requestURI);
 
-    public void setStatus(int responseStatusCode) {
-        this.responseStatusCode = responseStatusCode;
-    }
-
-    public void setDate(Date currentTime) {
-        this.currentTime = currentTime;
-    }
-
-    public void setContentType(String contentType) {
-        this.contentType = contentType;
-    }
-
-    public String getStatusLine() {
+    public String getStatusLine(Integer statusCode) {
         Map<Integer, String> statusLine = new HashMap<Integer, String>();
 
         statusLine.put(200, "200 OK");
@@ -34,18 +20,19 @@ public abstract class ResponseGenerator {
         statusLine.put(404, "404 File Not Found");
         statusLine.put(405, "405 Method Not Allowed");
 
-        return "HTTP/1.1 " + statusLine.get(this.responseStatusCode) + "\r\n";
+        return "HTTP/1.1 " + statusLine.get(statusCode) + "\r\n";
     }
 
     public String getDateHeader() {
-        return "Date: " + this.currentTime + "\r\n";
+        Date currentTime = new Date();
+        return "Date: " + currentTime + "\r\n";
     }
 
     public String getServerInfoHeader() {
         return "Server: Newsome-HTTP-Server\r\n";
     }
 
-    public  String getContentType() {
-        return "Content-type: " + this.contentType + "\r\n\r\n";
+    public  String getContentType(String contentType) {
+        return "Content-type: " + contentType + "\r\n\r\n";
     }
 }

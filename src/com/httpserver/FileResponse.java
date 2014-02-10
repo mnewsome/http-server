@@ -9,15 +9,11 @@ public class FileResponse extends ResponseGenerator {
         String decodedFile = fileParser.getDecodedFile(requestURI);
         Date currentTime = new Date();
 
-        setStatus(200);
-        setDate(currentTime);
-        setContentType("text/html");
-
         StringBuilder responseBuilder = new StringBuilder();
-        responseBuilder.append(getStatusLine());
+        responseBuilder.append(getStatusLine(200));
         responseBuilder.append(getDateHeader());
         responseBuilder.append(getServerInfoHeader());
-        responseBuilder.append(getContentType());
+        responseBuilder.append(getContentType("text/html"));
         responseBuilder.append("<HTML><BODY>");
         responseBuilder.append(decodedFile);
         responseBuilder.append("</BODY></HTML>");

@@ -22,7 +22,7 @@ public class ParameterDecodeResponseTest {
             String response = "HTTP/1.1 200 OK\r\n" +
                 "Date: " + currentTime + "\r\n" +
                 "Server: Newsome-HTTP-Server\r\n" +
-                "Content-type: text/html \r\n\r\n" +
+                "Content-type: text/html\r\n\r\n" +
                 "<HTML><BODY>" +
                 "variable_1 = Operators <, >, =, !=; +, -, *, &, @, #, $, [, ]: \"is that all\"?\r\n" +
                 "variable_2 = stuff\r\n" +
