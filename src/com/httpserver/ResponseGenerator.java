@@ -5,6 +5,7 @@ import java.util.Map;
 
 public abstract class ResponseGenerator {
     private int responseStatusCode;
+    private String contentType;
 
     public abstract byte[] generate(String requestURI);
 
@@ -12,7 +13,7 @@ public abstract class ResponseGenerator {
         this.responseStatusCode = responseStatusCode;
     }
 
-    private String getStatusLine(   ) {
+    private String getStatusLine() {
         Map<Integer, String> statusLine = new HashMap<Integer, String>();
 
         statusLine.put(200, "200 OK");
@@ -26,6 +27,17 @@ public abstract class ResponseGenerator {
     }
 
     public byte[] getResponse() {
-        return getStatusLine().getBytes();
+        StringBuilder response = new StringBuilder();
+        response.append(getStatusLine());
+        response.append(getContentType());
+        return response.toString().getBytes();
+    }
+
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
+    }
+
+    private String getContentType() {
+        return "Content-type: " + this.contentType + "\r\n\r\n";
     }
 }
