@@ -29,7 +29,7 @@ public abstract class ResponseGenerator {
 
         statusLine.put(200, "200 OK");
         statusLine.put(206, "206 Partial Content");
-        statusLine.put(301 , "301 Permanently Moved");
+        statusLine.put(301, "301 Permanently Moved");
         statusLine.put(401, "401 Unauthorized");
         statusLine.put(404, "404 File Not Found");
         statusLine.put(405, "405 Method Not Allowed");

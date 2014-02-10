@@ -6,15 +6,19 @@ import java.util.Date;
 public class RootResponse extends ResponseGenerator{
     @Override
     public byte[] generate(String requestURI) {
-        StringBuilder responseBuilder = new StringBuilder();
         File directory = new File("/Users/mnewsome/cob_spec/public/");
         File[] fileListing = directory.listFiles();
-
         Date currentTime = new Date();
-        responseBuilder.append("HTTP/1.1 200 OK\r\n");
-        responseBuilder.append("Date: " + currentTime + "\r\n");
-        responseBuilder.append("Server: Newsome-HTTP-Server\r\n");
-        responseBuilder.append("Content-type: text/html\r\n\r\n");
+
+        setStatus(200);
+        setDate(currentTime);
+        setContentType("text/html");
+
+        StringBuilder responseBuilder = new StringBuilder();
+        responseBuilder.append(getStatusLine());
+        responseBuilder.append(getDateHeader());
+        responseBuilder.append(getServerInfoHeader());
+        responseBuilder.append(getContentType());
         responseBuilder.append("<HTML><HEAD><TITLE>You got served!</TITLE></HEAD>");
         responseBuilder.append("<BODY><H1>Hello World</H1>");
 
