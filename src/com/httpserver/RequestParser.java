@@ -37,4 +37,9 @@ public class RequestParser {
     public boolean requestHeaderContains(String request, String headerToTest) {
         return request.contains(headerToTest);
     }
+
+    public String getBodyData(String request) {
+        String[] splitRequest = request.split("\r\n\r\n");
+        return splitRequest[1].replace("=", " = ");
+    }
 }

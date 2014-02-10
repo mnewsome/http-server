@@ -18,7 +18,7 @@ public class ResponseGeneratorTest {
     public void testGetContentType() {
         byte[] testResponse = "Content-type: text/html\r\n\r\n".getBytes();
         MockResponseGenerator mrg2 = new MockResponseGenerator();
-        assertArrayEquals(testResponse, mrg2.getContentType("txt/html").getBytes());
+        assertArrayEquals(testResponse, mrg2.getContentType("text/html").getBytes());
     }
 
     @Test

@@ -38,6 +38,13 @@ public class RequestParserTest {
        assertTrue(headerToTest);
     }
 
+    @Test
+    public void testGetBodyData() {
+        String testRequest = postRequest();
+        String bodyData = new RequestParser().getBodyData(testRequest);
+        assertEquals("Body data", "data = cosby", bodyData );
+    }
+
     private String getRequest() {
         String request = "GET / HTTP/1.1 " +
                 "Host: localhost:5000" +
@@ -50,11 +57,24 @@ public class RequestParserTest {
         return request;
     }
 
+    private String postRequest() {
+        String request = "New thread started on port 5000\n" +
+                "POST /form HTTP/1.1\r\n" +
+                "Connection: close\r\n" +
+                "Host: localhost:5000\r\n" +
+                "Content-Length: 1\r0\n" +
+                "Content-Type: application/x-www-form-urlencoded\r\n\r\n" +
+                "data=cosby";
+        return request;
+    }
+
     private BufferedReader getInput() {
         String request = getRequest();
         InputStream inputStream = new ByteArrayInputStream(request.getBytes());
         BufferedReader bufferedInput = new BufferedReader(new InputStreamReader(inputStream));
         return bufferedInput;
     }
+
+
 
 }
