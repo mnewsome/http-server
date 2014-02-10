@@ -1,9 +1,5 @@
 package com.httpserver;
 
-import javax.imageio.ImageIO;
-import javax.imageio.stream.ImageInputStream;
-import java.io.*;
-
 public class RequestDirector {
 
     public byte[] routeRequestAndGetResponse(String request) {
@@ -32,52 +28,14 @@ public class RequestDirector {
             response = new ParameterDecodeResponse().generate(requestURI);
         else if (requestURI.equals("/partial_content.txt"))
             response = new PartialContentResponse().generate(requestURI);
-        else if (requestURI.equals("/form"))
+        else if (requestURI.equals("/form") && requestMethod.equals("GET"))
             response = new StandardSuccessResponse().generate(requestURI);
+        else if (requestURI.equals("/form") && requestMethod.equals("POST"))
+            response = new PostResponse().generate(requestURI);
         else if (requestURI.equals("/redirect"))
             response = new RedirectResponse().generate(requestURI);
         else if (requestURI.equals("/method_options"))
             response = new MethodOptionsResponse().generate(requestURI);
         return response;
-
-    }
-
-    private Boolean fileExists (String requestURI) {
-        Boolean fileExists;
-        if (isFileFound(requestURI))
-            fileExists = true;
-        else if (isImageFound(requestURI))
-            fileExists = true;
-        else
-            fileExists = false;
-        return fileExists;
-    }
-
-    private Boolean isFileFound(String requestURI) {
-        Boolean fileExists = true;
-        try {
-            File file = new File(requestURI.substring(1, requestURI.length()));
-            FileInputStream fileStream = new FileInputStream(file);
-            byte[] fileData = new byte[((int)requestURI.length())];
-            fileStream.read(fileData);
-            fileStream.close();
-        } catch (Exception e) {
-            fileExists = false;
-        }
-        return fileExists;
-    }
-
-    private Boolean isImageFound(String requestURI) {
-        Boolean imageExists = true;
-        try {
-            InputStream inputStream = new FileInputStream(requestURI);
-            ImageInputStream imageInputStream = ImageIO.createImageInputStream(inputStream);
-            ImageIO.read(inputStream);
-
-        } catch (Exception e) {
-            imageExists = false;
-        }
-        return imageExists;
-
     }
 }
