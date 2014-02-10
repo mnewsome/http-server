@@ -7,12 +7,17 @@ public class FileResponse extends ResponseGenerator {
     public byte[] generate(String requestURI) {
         FileParser fileParser = new FileParser(requestURI);
         String decodedFile = fileParser.getDecodedFile(requestURI);
-        Date currentDateTime = new Date();
+        Date currentTime = new Date();
+
+        setStatus(200);
+        setDate(currentTime);
+        setContentType("text/html");
+
         StringBuilder responseBuilder = new StringBuilder();
-        responseBuilder.append("HTTP/1.1 200 OK\r\n");
-        responseBuilder.append("Date: " + currentDateTime + "\r\n");
-        responseBuilder.append("Server: Newsome-HTTP-Server\r\n");
-        responseBuilder.append("Content-type: text/html\r\n\r\n");
+        responseBuilder.append(getStatusLine());
+        responseBuilder.append(getDateHeader());
+        responseBuilder.append(getServerInfoHeader());
+        responseBuilder.append(getContentType());
         responseBuilder.append("<HTML><BODY>");
         responseBuilder.append(decodedFile);
         responseBuilder.append("</BODY></HTML>");
