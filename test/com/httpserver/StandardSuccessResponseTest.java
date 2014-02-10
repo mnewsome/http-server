@@ -2,6 +2,8 @@ package com.httpserver;
 
 import org.junit.Test;
 
+import java.util.Date;
+
 import static org.junit.Assert.assertArrayEquals;
 
 public class StandardSuccessResponseTest {
@@ -14,7 +16,14 @@ public class StandardSuccessResponseTest {
 
     private class MockStandardSuccessResponse {
         public byte[] generate(String requestURI) {
-            String response = "HTTP/1.1 200 OK\r\n";
+            Date currentTime = new Date();
+            String response = "HTTP/1.1 200 OK\r\n" +
+                    "Date: " + currentTime + "\r\n" +
+                    "Server: Newsome-HTTP-Server\r\n" +
+                    "Content-type: text/html\r\n\r\n" +
+                    "<HTML><BODY>" +
+                    "\"My\" = \"Data\"" +
+                    "</BODY></HTML>";
             return response.getBytes();
         }
     }
