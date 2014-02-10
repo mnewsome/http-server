@@ -32,6 +32,8 @@ public class RequestDirector {
             response = new StandardSuccessResponse().generate(requestURI);
         else if (requestURI.equals("/form") && requestMethod.equals("POST"))
             response = new PostResponse().generate(requestURI);
+        else if (requestURI.equals("/form") && requestMethod.equals("PUT"))
+            response = new PutResponse().generate(requestURI);
         else if (requestURI.equals("/redirect"))
             response = new RedirectResponse().generate(requestURI);
         else if (requestURI.equals("/method_options"))
