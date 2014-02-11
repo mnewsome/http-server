@@ -6,10 +6,10 @@ public class PutResponse extends ResponseGenerator{
     @Override
     public byte[] generate(String request) {
         String bodyData = new RequestParser().getBodyData(request);
-        FileOutputStream outputStream = null;
+        FileOutputStream fileOutputStream = null;
         try {
-            outputStream = new FileOutputStream("/Users/mnewsome/cob_spec/public/form");
-            outputStream.write(bodyData.getBytes());
+            fileOutputStream = new FileOutputStream("/Users/mnewsome/cob_spec/public/form");
+            fileOutputStream.write(bodyData.getBytes());
         } catch (Exception e) {
             e.printStackTrace();
         }

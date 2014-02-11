@@ -1,6 +1,8 @@
 package com.httpserver;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -14,14 +16,15 @@ public class HttpServer {
     }
 
     public void start() throws IOException{
+        Socket clientSocket = null;
         try {
             ServerSocket serverSocket = new ServerSocket(portNumber);
             while (true) {
-                Socket clientSocket = serverSocket.accept();
+                clientSocket = serverSocket.accept();
+                BufferedReader input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 System.out.println("New thread started on port " + portNumber);
 
-                Runnable serverThread = new ServerThread(clientSocket, requestDirector);
-                new Thread(serverThread).start();
+                new ServerThread(clientSocket, requestDirector,input).start();
             }
         } catch (IOException e) {
             System.out.println("Error occurred while listening on port " + portNumber );

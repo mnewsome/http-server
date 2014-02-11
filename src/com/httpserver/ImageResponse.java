@@ -19,6 +19,7 @@ public class ImageResponse extends ResponseGenerator {
         try {
             outputStream.write(responseBuilder.toString().getBytes());
             outputStream.write(imageFile);
+            outputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

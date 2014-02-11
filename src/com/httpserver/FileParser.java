@@ -5,22 +5,22 @@ import java.io.FileInputStream;
 import java.io.UnsupportedEncodingException;
 
 public class FileParser {
-    String requestFile;
+    String requestURI;
 
     public FileParser(String requestFile) {
-        this.requestFile = requestFile;
+        this.requestURI = requestFile;
     }
 
     public String getContentType() {
         String contentType = "";
 
-        if (requestFile.endsWith(".html") || requestFile.endsWith(".htm"))
+        if (requestURI.endsWith(".html") || requestURI.endsWith(".htm"))
             contentType = "text/html";
-        else if (requestFile.endsWith(".jpg") || requestFile.endsWith(".jpeg"))
+        else if (requestURI.endsWith(".jpg") || requestURI.endsWith(".jpeg"))
             contentType = "image/jpeg";
-        else if (requestFile.endsWith(".gif"))
+        else if (requestURI.endsWith(".gif"))
             contentType = "image/gif";
-        else if (requestFile.endsWith(".png"))
+        else if (requestURI.endsWith(".png"))
             contentType = "image/png";
         else
             contentType = "text/plain";
@@ -29,7 +29,7 @@ public class FileParser {
     }
 
     public String getContentLength() {
-        return String.valueOf(requestFile.length());
+        return String.valueOf(requestURI.length());
     }
 
     public String getDecodedFile(String requestURI) {

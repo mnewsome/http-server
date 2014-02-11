@@ -3,24 +3,24 @@ package com.httpserver;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.Socket;
 
-public class ServerThread implements Runnable{
+public class ServerThread extends Thread {
     private final Socket clientSocket;
     private final RequestDirector requestDirector;
+    private BufferedReader input;
 
-    public ServerThread(Socket clientSocket, RequestDirector requestDirector) {
+    public ServerThread(Socket clientSocket, RequestDirector requestDirector, BufferedReader input) {
         this.clientSocket = clientSocket;
         this.requestDirector = requestDirector;
+        this.input = input;
     }
 
     public void run() {
-        BufferedReader input;
         DataOutputStream output;
 
         try {
-            input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+
             RequestParser requestParser = new RequestParser();
             String request = requestParser.getRequest(input);
             byte[] response = requestDirector.routeRequestAndGetResponse(request);
@@ -28,6 +28,7 @@ public class ServerThread implements Runnable{
             output.write(response);
             output.close();
             input.close();
+            clientSocket.close();
 
         } catch (IOException e) {
             System.out.println("Request could not be processed");

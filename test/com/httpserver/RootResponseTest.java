@@ -15,7 +15,6 @@ public class RootResponseTest {
     }
 
     private class MockRootResponse {
-
         public byte[] generate (String requestURI) {
             Date currentTime = new Date();
             String response = String.format("HTTP/1.1 200 OK\r\n" +
@@ -26,6 +25,7 @@ public class RootResponseTest {
                     "<BODY><H1>Hello World</H1>" +
                     "<a href=\"/file1\">file1</a>\r\n" +
                     "<a href=\"/file2\">file2</a>\r\n" +
+                    "<a href=\"/form\">form</a>\r\n" +
                     "<a href=\"/image.gif\">image.gif</a>\r\n" +
                     "<a href=\"/image.jpeg\">image.jpeg</a>\r\n" +
                     "<a href=\"/image.png\">image.png</a>\r\n" +

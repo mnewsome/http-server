@@ -22,7 +22,7 @@ public class StandardSuccessResponseTest {
                     "Server: Newsome-HTTP-Server\r\n" +
                     "Content-type: text/html\r\n\r\n" +
                     "<HTML><BODY>" +
-                    "\"My\" = \"Data\"" +
+                    "data = cosby" +
                     "</BODY></HTML>";
             return response.getBytes();
         }

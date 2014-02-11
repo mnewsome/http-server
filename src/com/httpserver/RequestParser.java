@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class RequestParser {
+    public RequestParser() {
+    }
+
     public String getRequest(BufferedReader clientInput) throws IOException {
         StringBuilder request = new StringBuilder();
         while (clientInput.ready()) {
