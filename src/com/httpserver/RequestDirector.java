@@ -9,7 +9,7 @@ public class RequestDirector {
         String requestMethod = requestParser.getRequestMethod(request);
 
         if (requestURI.equals("/logs") && requestMethod.equals("GET") && requestParser.requestHeaderContains(request, "Authorization: Basic YWRtaW46aHVudGVyMg=="))
-            return response = new BasicAuthResponseWithCredentials().generate(requestURI);
+            return response = new FileResponse().generate(requestURI);
         else if (requestURI.equals("/logs") && requestMethod.equals("GET"))
             response = new BasicAuthResponse().generate(requestURI);
         else if (requestURI.equals("/log") || requestURI.equals("/these") || requestURI.equals("/requests"))

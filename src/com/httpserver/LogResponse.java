@@ -9,7 +9,7 @@ public class LogResponse extends ResponseGenerator {
         String formattedHeader = headerLine + "\r\n";
         FileOutputStream fileOutputStream = null;
         try {
-            fileOutputStream = new FileOutputStream("/Users/mnewsome/cob_spec/public/logs");
+            fileOutputStream = new FileOutputStream("/Users/mnewsome/cob_spec/public/logs", true);
             fileOutputStream.write(formattedHeader.getBytes());
         } catch (Exception e) {
             System.out.println("Log could not be created.");
