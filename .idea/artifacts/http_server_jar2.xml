@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="http_server:jar2">
-    <output-path>$USER_HOME$/</output-path>
-    <root id="archive" name="http_server.jar">
-      <element id="module-output" name="http_server" />
-    </root>
-  </artifact>
-</component>

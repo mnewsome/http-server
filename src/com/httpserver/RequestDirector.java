@@ -13,7 +13,7 @@ public class RequestDirector {
         else if (requestURI.equals("/logs") && requestMethod.equals("GET"))
             response = new BasicAuthResponse().generate(requestURI);
         else if (requestURI.equals("/log") || requestURI.equals("/these") || requestURI.equals("/requests"))
-            response = new StandardSuccessResponse().generate(requestURI);
+            response = new LogResponse().generate(request);
         else if (requestURI.equals("/") && requestParser.requestHeaderContains(request, "User-Agent: Typhoeus - https://github.com/typhoeus/typhoeus"))
             response = new SimultaneousResponse().generate(requestURI);
         else if (requestURI.equals("/"))

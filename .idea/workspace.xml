@@ -7,16 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="380053ca-7c39-4fd0-8fbb-024e6ac814b1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/httpserver/HttpServerTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/httpserver/FileParser.java" afterPath="$PROJECT_DIR$/src/com/httpserver/FileParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/httpserver/HttpServer.java" afterPath="$PROJECT_DIR$/src/com/httpserver/HttpServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/httpserver/ImageResponse.java" afterPath="$PROJECT_DIR$/src/com/httpserver/ImageResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/httpserver/PostResponse.java" afterPath="$PROJECT_DIR$/src/com/httpserver/PostResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/httpserver/PutResponse.java" afterPath="$PROJECT_DIR$/src/com/httpserver/PutResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/httpserver/RequestParser.java" afterPath="$PROJECT_DIR$/src/com/httpserver/RequestParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/httpserver/RootResponseTest.java" afterPath="$PROJECT_DIR$/test/com/httpserver/RootResponseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/httpserver/ServerThread.java" afterPath="$PROJECT_DIR$/src/com/httpserver/ServerThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/httpserver/StandardSuccessResponseTest.java" afterPath="$PROJECT_DIR$/test/com/httpserver/StandardSuccessResponseTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/http_server_jar2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/http_server_jar22.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/httpserver/LogResponse.java" afterPath="$PROJECT_DIR$/src/com/httpserver/LogResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/httpserver/LogResponseTest.java" afterPath="$PROJECT_DIR$/test/com/httpserver/LogResponseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/httpserver/RequestDirector.java" afterPath="$PROJECT_DIR$/src/com/httpserver/RequestDirector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="http_server.iws" />
@@ -81,42 +76,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HttpServer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/httpserver/HttpServer.java">
+      <file leaf-file-name="PostResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/httpserver/PostResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="29" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="720">
+            <state line="7" column="30" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/httpserver/FileParser.java">
+      <file leaf-file-name="RequestParserTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/httpserver/RequestParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="21" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1480">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="42" column="21" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="1760">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResponseGenerator.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/httpserver/ResponseGenerator.java">
+      <file leaf-file-name="StandardSuccessResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="41" selection-start="138" selection-end="138" vertical-scroll-proportion="-0.5354691" vertical-offset="354" max-vertical-offset="880">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#335#352#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileResponse.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/httpserver/FileResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="24" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="620">
+            <state line="8" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="580">
               <folding />
             </state>
           </provider>
@@ -125,7 +106,43 @@
       <file leaf-file-name="RequestParser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+            <state line="49" column="40" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0" vertical-offset="618" max-vertical-offset="1140">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileResponseTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/httpserver/FileResponseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="53" selection-start="650" selection-end="956" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileParserTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/httpserver/FileParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="105" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0" vertical-offset="711" max-vertical-offset="1220">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/httpserver/LogResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="45" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogResponseTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/httpserver/LogResponseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="29" selection-start="588" selection-end="588" vertical-scroll-proportion="0.5522388" vertical-offset="118" max-vertical-offset="520">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,31 +150,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestDirector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestDirector.java">
+      <file leaf-file-name="PutResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/httpserver/PutResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="35" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1060">
+            <state line="8" column="8" selection-start="246" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/httpserver/Main.java">
+      <file leaf-file-name="PostResponseTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/httpserver/PostResponseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="74" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="760">
+            <state line="10" column="29" selection-start="205" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServerThread.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/httpserver/ServerThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="39" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -180,8 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/com/httpserver/MockBasicAuthResponse.java" />
-        <option value="$PROJECT_DIR$/test/com/httpserver/MockDirectoryListingResponse.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/MockFileDoesNotExistResponse.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/FileDoesNotExistTest.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/MockFileResponse.java" />
@@ -199,7 +203,6 @@
         <option value="$PROJECT_DIR$/test/com/httpserver/RequestDirectorTest.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/Main.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/RedirectResponseTest.java" />
-        <option value="$PROJECT_DIR$/src/com/httpserver/ResponseGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/ParameterDecodeResponse.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/RootResponse.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/FileDoesNotExistResponse.java" />
@@ -212,7 +215,6 @@
         <option value="$PROJECT_DIR$/test/com/httpserver/ParameterDecodeResponseTest.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/PartialContentResponse.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/RedirectResponse.java" />
-        <option value="$PROJECT_DIR$/test/com/httpserver/RequestParserTest.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/ResponseGeneratorTest.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/PostResponseTest.java" />
@@ -220,8 +222,6 @@
         <option value="$PROJECT_DIR$/src/com/httpserver/ImageResponse.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/PostResponse.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/PutResponse.java" />
-        <option value="$PROJECT_DIR$/src/com/httpserver/RequestDirector.java" />
-        <option value="$PROJECT_DIR$/src/com/httpserver/RequestParser.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/StandardResponse.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/SimultaneousResponse.java" />
         <option value="$PROJECT_DIR$/test/com/httpserver/SimultaneousResponseTest.java" />
@@ -231,6 +231,12 @@
         <option value="$PROJECT_DIR$/src/com/httpserver/HttpServer.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/ServerThread.java" />
         <option value="$PROJECT_DIR$/src/com/httpserver/FileParser.java" />
+        <option value="$PROJECT_DIR$/src/com/httpserver/ResponseGenerator.java" />
+        <option value="$PROJECT_DIR$/src/com/httpserver/RequestDirector.java" />
+        <option value="$PROJECT_DIR$/src/com/httpserver/RequestParser.java" />
+        <option value="$PROJECT_DIR$/test/com/httpserver/RequestParserTest.java" />
+        <option value="$PROJECT_DIR$/test/com/httpserver/LogResponseTest.java" />
+        <option value="$PROJECT_DIR$/src/com/httpserver/LogResponse.java" />
       </list>
     </option>
   </component>
@@ -266,6 +272,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Tests">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -337,16 +353,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Tests">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,24 +379,41 @@
     <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.httpserver" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.httpserver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.httpserver in http_server">
-    <configuration default="false" name="SimultaneousResponseTest.testGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LogResponseTest.testGenerate">
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.httpserver.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="http_server" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RequestParserTest.testGetHeaderLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="http_server" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.httpserver" />
-      <option name="MAIN_CLASS_NAME" value="com.httpserver.SimultaneousResponseTest" />
-      <option name="METHOD_NAME" value="testGenerate" />
+      <option name="MAIN_CLASS_NAME" value="com.httpserver.RequestParserTest" />
+      <option name="METHOD_NAME" value="testGetHeaderLine" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -406,14 +429,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="com.httpserver in http_server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RequestParserTest.testRequestHeaderContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="http_server" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.httpserver" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="com.httpserver.RequestParserTest" />
+      <option name="METHOD_NAME" value="testRequestHeaderContains" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -428,12 +451,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="FileDoesNotExistResponseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RequestParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="http_server" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.httpserver" />
-      <option name="MAIN_CLASS_NAME" value="com.httpserver.FileDoesNotExistResponseTest" />
+      <option name="MAIN_CLASS_NAME" value="com.httpserver.RequestParserTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -450,36 +473,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="RootResponseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="LogResponseTest.testGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="http_server" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.httpserver" />
-      <option name="MAIN_CLASS_NAME" value="com.httpserver.RootResponseTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="StandardSuccessResponseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="http_server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.httpserver" />
-      <option name="MAIN_CLASS_NAME" value="com.httpserver.StandardSuccessResponseTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.httpserver.LogResponseTest" />
+      <option name="METHOD_NAME" value="testGenerate" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -625,19 +626,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ResponseGeneratorTest.testResponseWithOneHeader" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SimultaneousResponseTest.testGenerate" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.com.httpserver in http_server" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FileDoesNotExistResponseTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RootResponseTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.StandardSuccessResponseTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RequestParserTest.testGetHeaderLine" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RequestParserTest.testRequestHeaderContains" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RequestParserTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.LogResponseTest.testGenerate" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.com.httpserver in http_server" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StandardSuccessResponseTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RootResponseTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FileDoesNotExistResponseTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SimultaneousResponseTest.testGenerate" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LogResponseTest.testGenerate" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RequestParserTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RequestParserTest.testRequestHeaderContains" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RequestParserTest.testGetHeaderLine" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -668,7 +669,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1600" height="940" extended-state="6" />
+    <frame x="4" y="22" width="1600" height="940" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -676,22 +677,22 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898417" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39839265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33934253" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26330027" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2629717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46613088" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2182285" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4658019" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898417" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -717,12 +718,31 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestDirector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="35" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="74" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/ServerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="39" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/httpserver/FileParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="18" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0" vertical-offset="880" max-vertical-offset="1060">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -756,9 +776,7 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="0" selection-start="4823" selection-end="4823" vertical-scroll-proportion="0.0" vertical-offset="2240" max-vertical-offset="8460">
-          <folding />
-        </state>
+        <state line="145" column="0" selection-start="4823" selection-end="4823" vertical-scroll-proportion="0.0" vertical-offset="2240" max-vertical-offset="8460" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/httpserver/MethodNotAllowedResponseTest.java">
@@ -778,13 +796,6 @@
     <entry file="file://$PROJECT_DIR$/test/com/httpserver/MethodOptionsResponseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="5" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="520">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/httpserver/FileParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="105" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0" vertical-offset="733" max-vertical-offset="1220">
           <folding />
         </state>
       </provider>
@@ -823,20 +834,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/httpserver/FileResponseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="53" selection-start="650" selection-end="956" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/httpserver/PostResponseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="184" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="660">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,37 +895,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/PostResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="30" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/httpserver/PartialContentResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="13" selection-start="62" selection-end="62" vertical-scroll-proportion="0.10443864" vertical-offset="0" max-vertical-offset="766">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RedirectResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="305" selection-end="305" vertical-scroll-proportion="0.1774398" vertical-offset="0" max-vertical-offset="789">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/PutResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="268" selection-end="268" vertical-scroll-proportion="0.20278834" vertical-offset="0" max-vertical-offset="789">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/httpserver/RequestParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="56" selection-start="1295" selection-end="1358" vertical-scroll-proportion="1.3266788" vertical-offset="29" max-vertical-offset="1620">
           <folding />
         </state>
       </provider>
@@ -967,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="47" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="580">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/httpserver/RootResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="56" selection-start="559" selection-end="559" vertical-scroll-proportion="0.4964539" vertical-offset="0" max-vertical-offset="640">
@@ -1005,9 +967,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/httpserver/ServerThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="39" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,22 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="74" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="760">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestDirector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="35" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1060">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1044,18 +988,102 @@
     <entry file="file://$PROJECT_DIR$/src/com/httpserver/FileParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="21" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1480">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/httpserver/ResponseGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="138" selection-end="138" vertical-scroll-proportion="-0.5354691" vertical-offset="354" max-vertical-offset="880">
+        <state line="6" column="41" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="880">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#335#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RedirectResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="48" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/PostResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="30" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/StandardSuccessResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestDirector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="33" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="1060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/RequestParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="40" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0" vertical-offset="618" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/RequestParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="21" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="1760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/FileParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="105" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0" vertical-offset="711" max-vertical-offset="1220">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/FileResponseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="53" selection-start="650" selection-end="956" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/PostResponseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="205" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/PutResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="8" selection-start="246" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/httpserver/LogResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="45" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/httpserver/LogResponseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="29" selection-start="588" selection-end="588" vertical-scroll-proportion="0.5522388" vertical-offset="118" max-vertical-offset="520">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
