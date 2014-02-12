@@ -1,3 +1,7 @@
 index.html
 favicon.ico
 logs
+out/
+.idea/
+http_server.iml
+file
