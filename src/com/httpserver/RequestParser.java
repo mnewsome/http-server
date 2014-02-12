@@ -45,4 +45,8 @@ public class RequestParser {
         String[] splitRequest = request.split("\r\n\r\n");
         return splitRequest[1].replace("=", " = ");
     }
+
+    public String getHeaderLine(String request) {
+        return request.split("\r\n")[0];
+    }
 }

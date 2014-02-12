@@ -32,6 +32,13 @@ public class RequestParserTest {
     }
 
     @Test
+    public void testGetHeaderLine() {
+        String testRequest = getRequest();
+        String headerLine = new RequestParser().getHeaderLine(testRequest);
+        assertEquals("Header Line", "GET / HTTP/1.1", headerLine);
+    }
+
+    @Test
     public void testRequestHeaderContains() {
        String request = getRequest();
        boolean headerToTest = new RequestParser().requestHeaderContains(request, "Connection: keep-alive");
@@ -46,14 +53,14 @@ public class RequestParserTest {
     }
 
     private String getRequest() {
-        String request = "GET / HTTP/1.1 " +
-                "Host: localhost:5000" +
-                "Connection: keep-alive" +
-                "Cache-Control: max-age=0" +
-                "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" +
-                "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36" +
-                "Accept-Encoding: gzip,deflate,sdch"+
-                "Accept-Language: en-US,en;q=0.8";
+        String request = "GET / HTTP/1.1\r\n" +
+                "Host: localhost:5000\r\n" +
+                "Connection: keep-alive\r\n" +
+                "Cache-Control: max-age=0\r\n" +
+                "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\n" +
+                "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36\r\n" +
+                "Accept-Encoding: gzip,deflate,sdch\r\n"+
+                "Accept-Language: en-US,en;q=0.8\r\n";
         return request;
     }
 
