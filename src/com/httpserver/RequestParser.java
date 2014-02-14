@@ -9,11 +9,35 @@ public class RequestParser {
 
     public String getRequest(BufferedReader clientInput) throws IOException {
         StringBuilder request = new StringBuilder();
+        String line;
+        String contentLength = null;
+        char[] bodyCharacters = new char[0];
+        while (!(line = clientInput.readLine()).equals("")) {
+            request.append(line + "\r\n");
+
+        }
+        String body = "";
+        if(requestHeaderContains(request.toString(), "Content-Length"))
+            body = getBody(clientInput);
+        System.out.println(request.toString() + body);
+        return request.toString() +"\r\n" + body;
+    }
+
+    private String getBody(BufferedReader clientInput) throws IOException {
+        StringBuilder request = new StringBuilder();
         while (clientInput.ready()) {
             request.append((char) clientInput.read());
         }
-        System.out.println(request.toString());
-        return request.toString();
+        return getBodyData(request.toString());
+    }
+
+    public String getContentLength(String requestLine) {
+        return requestLine.split(": ")[1];
+    }
+
+    public String getBodyData(String request) {
+        String[] splitRequest = request.split("\r\n");
+        return splitRequest[splitRequest.length - 1].replace("=", " = ");
     }
 
     public String getRequestMethod(String request) {
@@ -39,11 +63,6 @@ public class RequestParser {
 
     public boolean requestHeaderContains(String request, String headerToTest) {
         return request.contains(headerToTest);
-    }
-
-    public String getBodyData(String request) {
-        String[] splitRequest = request.split("\r\n\r\n");
-        return splitRequest[1].replace("=", " = ");
     }
 
     public String getHeaderLine(String request) {

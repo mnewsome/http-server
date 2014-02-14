@@ -1,14 +1,10 @@
 package com.httpserver;
 
-import java.util.Date;
-
 public class StandardSuccessResponse extends ResponseGenerator{
     @Override
     public byte[] generate(String requestURI) {
         FileParser fileParser = new FileParser(requestURI);
         String decodedFile = fileParser.getDecodedFile(requestURI);
-        Date currentTime = new Date();
-
         StringBuilder responseBuilder = new StringBuilder();
         responseBuilder.append(getStatusLine(200));
         responseBuilder.append(getDateHeader());

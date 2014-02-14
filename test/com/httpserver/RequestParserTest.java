@@ -37,6 +37,11 @@ public class RequestParserTest {
         String headerLine = new RequestParser().getHeaderLine(testRequest);
         assertEquals("Header Line", "GET / HTTP/1.1", headerLine);
     }
+    public void testGetContentLength() {
+        String testRequestLine = "Content-length: 10\r\n";
+        String contentLength = new RequestParser().getContentLength(testRequestLine);
+        assertEquals("Content Length", "10", contentLength);
+    }
 
     @Test
     public void testRequestHeaderContains() {
@@ -60,7 +65,7 @@ public class RequestParserTest {
                 "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\n" +
                 "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36\r\n" +
                 "Accept-Encoding: gzip,deflate,sdch\r\n"+
-                "Accept-Language: en-US,en;q=0.8\r\n";
+                "Accept-Language: en-US,en;q=0.8\r\n\r\n";
         return request;
     }
 
@@ -69,8 +74,8 @@ public class RequestParserTest {
                 "POST /form HTTP/1.1\r\n" +
                 "Connection: close\r\n" +
                 "Host: localhost:5000\r\n" +
-                "Content-Length: 1\r0\n" +
-                "Content-Type: application/x-www-form-urlencoded\r\n\r\n" +
+                "Content-Length: 10\r\n" +
+                "Content-Type: application/x-www-form-urlencoded\r\n" +
                 "data=cosby";
         return request;
     }
